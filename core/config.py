@@ -80,8 +80,8 @@ class Settings(BaseSettings):
                 internal_hosts = ["whatsapp-api-repo-engine", "whatsapp-platform-api-engine"]
                 
                 logger = logging.getLogger("CONFIG")
-                # We use the first one as primary, but the user can override via env var
                 target_host = internal_hosts[0]
+                logger.warning(f"🚀 [RENDER_AUTO_FIX] Detected Render environment. Switching to internal service: http://{target_host}:10000")
                 return f"http://{target_host}:10000"
         
         # 🔥 LOCALHOST FIX: Force 127.0.0.1 if 'localhost' is used to avoid IPv6 issues (::1)
