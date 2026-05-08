@@ -132,7 +132,14 @@ async def change_password(
             detail="Invalid current password"
         )
         
-    # 2. Hash & Update New Password
+    # 2. Check if new password is the same as old one
+    if verify_password(password_data.new_password, current_user.password_hash):
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="New password must be different from your current password"
+        )
+        
+    # 3. Hash & Update New Password
     current_user.password_hash = get_password_hash(password_data.new_password)
     
     # 3. Commit
