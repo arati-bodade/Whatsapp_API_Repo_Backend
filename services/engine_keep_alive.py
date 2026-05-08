@@ -51,14 +51,24 @@ class EngineKeepAlive:
             try:
                 self._ping_engine()
                 self.consecutive_failures = 0
+            except requests.exceptions.ConnectionError:
+                self.consecutive_failures += 1
+                # Log as warning since we handle it, but keep it visible
+                logger.warning(f"Keep-alive connection refused (attempt {self.consecutive_failures})")
+                
+                # If too many consecutive failures, check if we're using localhost in a non-local environment
+                if self.consecutive_failures >= 3:
+                    if "localhost" in self.engine_url or "127.0.0.1" in self.engine_url:
+                        logger.error("🛑 CRITICAL: Keep-alive is failing on localhost. If this is running on Render, "
+                                     "you MUST set WHATSAPP_ENGINE_URL to the engine's public or internal Render URL.")
+                    time.sleep(self.ping_interval * 2)
+                    continue
             except Exception as e:
                 self.consecutive_failures += 1
                 logger.error(f"Keep-alive ping failed (attempt {self.consecutive_failures}): {e}")
                 
-                # If too many consecutive failures, increase ping interval temporarily
                 if self.consecutive_failures >= 3:
-                    logger.warning("Multiple keep-alive failures, reducing ping frequency")
-                    time.sleep(self.ping_interval * 2)  # Wait double time
+                    time.sleep(self.ping_interval * 2)
                     continue
                     
             time.sleep(self.ping_interval)
@@ -70,7 +80,7 @@ class EngineKeepAlive:
         try:
             response = requests.get(
                 health_url,
-                timeout=30,  # 30 second timeout
+                timeout=15,  # Reduced from 30 to 15 for faster failure detection
                 headers={'User-Agent': 'Keep-Alive-Service/1.0'}
             )
             
@@ -78,20 +88,23 @@ class EngineKeepAlive:
                 self.last_ping_status = "success"
                 logger.debug(f"Engine keep-alive ping successful: {response.status_code}")
             elif response.status_code == 404:
-                # 404 might mean engine is waking up but health endpoint not ready
                 self.last_ping_status = "waking_up"
                 logger.info("Engine might be waking up (404 on health endpoint)")
+            elif "text/html" in response.headers.get("Content-Type", ""):
+                self.last_ping_status = "port_mismatch"
+                logger.error(f"🚨 PORT MISMATCH: Engine {health_url} returned HTML instead of JSON. "
+                             "Check if WHATSAPP_ENGINE_URL points to the correct service/port.")
             else:
                 self.last_ping_status = f"error_{response.status_code}"
                 logger.warning(f"Engine returned unexpected status: {response.status_code}")
                 
         except requests.exceptions.Timeout:
             self.last_ping_status = "timeout"
-            logger.warning("Engine keep-alive ping timed out")
+            logger.warning(f"Engine keep-alive ping timed out for {health_url}")
             raise
         except requests.exceptions.ConnectionError:
             self.last_ping_status = "connection_error"
-            logger.warning("Engine keep-alive connection failed")
+            # We don't log here, let the loop handle it
             raise
         except Exception as e:
             self.last_ping_status = "unknown_error"

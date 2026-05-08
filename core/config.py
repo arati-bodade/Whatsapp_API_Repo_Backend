@@ -64,12 +64,24 @@ class Settings(BaseSettings):
     GOOGLE_SHEETS_WEBHOOK_SECRET: Optional[str] = None
 
     # WhatsApp Engine
-    WHATSAPP_ENGINE_URL: str = "http://localhost:3002"
+    WHATSAPP_ENGINE_URL: str = "http://127.0.0.1:3002"
 
     @property
     def WHATSAPP_ENGINE_BASE_URL(self) -> str:
         # ROBUST: Ensure URL is stripped of any hidden newlines, whitespace, and trailing slashes
         url = (self.WHATSAPP_ENGINE_URL or "").strip()
+        
+        # 🔥 SMART DISCOVERY: If on Render and URL is still localhost/127.0.0.1
+        if os.environ.get("RENDER") == "true":
+            if "localhost" in url or "127.0.0.1" in url:
+                internal_host = "whatsapp-platform-api-engine"
+                return f"http://{internal_host}:10000"
+        
+        # 🔥 LOCALHOST FIX: Force 127.0.0.1 if 'localhost' is used to avoid IPv6 issues (::1)
+        # Many Windows/Linux systems fail to connect to IPv4-only services via 'localhost'
+        if "localhost" in url:
+            url = url.replace("localhost", "127.0.0.1")
+            
         # Remove trailing slash to prevent double slashes in URL construction
         return url.rstrip('/')
 

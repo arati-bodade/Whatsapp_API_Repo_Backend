@@ -1,3 +1,4 @@
+print("🚀 [DEV] RELOAD DETECTED - Loading WhatsApp Platform Backend...")
 from fastapi import FastAPI, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.exceptions import RequestValidationError
@@ -193,7 +194,8 @@ async def auto_migrate_db():
 async def lifespan(app: FastAPI):
     """Application lifespan manager for safe background task handling"""
     logger.info("🎬 [STARTUP] WhatsApp Platform Backend initializing...")
-    logger.info(f"⚙️ [CONFIG] Engine URL: {settings.WHATSAPP_ENGINE_URL}")
+    logger.info(f"⚙️ [CONFIG] Engine URL (Raw): {settings.WHATSAPP_ENGINE_URL}")
+    logger.info(f"⚙️ [CONFIG] Engine URL (Resolved): {settings.WHATSAPP_ENGINE_BASE_URL}")
     
     # 🔥 Log database pool settings for debugging
     logger.info(f"🔧 [DB POOL] Configured pool_size=25, max_overflow=25 (production-optimized)")

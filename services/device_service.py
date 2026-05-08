@@ -594,7 +594,8 @@ class DeviceService:
         # This solves the "Engine shows Connected but UI shows nothing" problem
         try:
             # Fetch all sessions directly from engine
-            engine_url = os.getenv("WHATSAPP_ENGINE_URL", "http://localhost:3002")
+            from core.config import settings
+            engine_url = settings.WHATSAPP_ENGINE_BASE_URL
             response = requests.get(f"{engine_url}/sessions", timeout=5)
             
             if response.status_code == 200:
