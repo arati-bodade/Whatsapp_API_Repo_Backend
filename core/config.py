@@ -3,6 +3,7 @@ from typing import Optional, Any
 from sqlalchemy import create_engine, event
 import os
 import logging
+import socket
 
 
 class Settings(BaseSettings):
@@ -71,21 +72,34 @@ class Settings(BaseSettings):
         # ROBUST: Ensure URL is stripped of any hidden newlines, whitespace, and trailing slashes
         url = (self.WHATSAPP_ENGINE_URL or "").strip()
         
-        # 🔥 SMART DISCOVERY: If on Render and URL is still localhost/127.0.0.1
+        # 🔥 DYNAMIC DISCOVERY: If on Render and URL is still localhost/127.0.0.1
         if os.environ.get("RENDER") == "true":
             if "localhost" in url or "127.0.0.1" in url:
-                # Try both common naming patterns
-                # Priority 1: whatsapp-api-repo-engine (matches the backend's naming convention)
-                # Priority 2: whatsapp-platform-api-engine (template default)
-                internal_hosts = ["whatsapp-api-repo-engine", "whatsapp-platform-api-engine"]
+                # Try multiple common naming patterns
+                potential_hosts = [
+                    "whatsapp-api-repo-engine", 
+                    "whatsapp-platform-api-engine",
+                    "whatsapp-engine",
+                    "whatsapp-api-engine"
+                ]
                 
                 logger = logging.getLogger("CONFIG")
-                target_host = internal_hosts[0]
-                logger.warning(f"🚀 [RENDER_AUTO_FIX] Detected Render environment. Switching to internal service: http://{target_host}:10000")
-                return f"http://{target_host}:10000"
+                for host in potential_hosts:
+                    try:
+                        # Attempt to resolve the hostname
+                        socket.gethostbyname(host)
+                        logger.warning(f"🚀 [RENDER_AUTO_FIX] Successfully resolved internal host: {host}")
+                        return f"http://{host}:10000"
+                    except socket.gaierror:
+                        continue
+                
+                # If no internal host resolves, try the public URL pattern as fallback
+                # This assumes the engine name matches the backend repo prefix
+                public_fallback = "https://whatsapp-api-repo-engine.onrender.com"
+                logger.warning(f"⚠️ [RENDER_AUTO_FIX] No internal hosts resolved. Falling back to public URL: {public_fallback}")
+                return public_fallback
         
         # 🔥 LOCALHOST FIX: Force 127.0.0.1 if 'localhost' is used to avoid IPv6 issues (::1)
-        # Many Windows/Linux systems fail to connect to IPv4-only services via 'localhost'
         if "localhost" in url:
             url = url.replace("localhost", "127.0.0.1")
             
