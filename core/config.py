@@ -73,15 +73,14 @@ class Settings(BaseSettings):
         
         # 🔥 SMART DISCOVERY: If on Render and URL is still localhost/127.0.0.1
         if os.environ.get("RENDER") == "true":
+            if "localhost" in url or "127.0.0.1" in url:
                 # Try both common naming patterns
-                internal_hosts = ["whatsapp-platform-api-engine", "whatsapp-api-repo-engine"]
+                # Priority 1: whatsapp-api-repo-engine (matches the backend's naming convention)
+                # Priority 2: whatsapp-platform-api-engine (template default)
+                internal_hosts = ["whatsapp-api-repo-engine", "whatsapp-platform-api-engine"]
                 
-                # We return the first one, but logging both helps diagnostics
                 logger = logging.getLogger("CONFIG")
-                logger.warning(f"🚀 [RENDER_AUTO_FIX] Detected Render environment but engine URL is '{url}'.")
-                
-                # Logic: We'll try the first one, if it fails, the keep-alive service will log the failure
-                # and we can refine further. But whatsapp-platform-api-engine is the name in render.yaml.
+                # We use the first one as primary, but the user can override via env var
                 target_host = internal_hosts[0]
                 return f"http://{target_host}:10000"
         
