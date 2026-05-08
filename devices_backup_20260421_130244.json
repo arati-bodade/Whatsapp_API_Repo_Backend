@@ -1,0 +1,290 @@
+[
+  {
+    "device_id": "5e0d7680-796b-4a92-bab9-2aa644723d59",
+    "busi_user_id": "4ef2c42f-bda5-44f8-81bf-d9e454768bc2",
+    "device_name": "vikas whatsapp web ",
+    "device_type": "web",
+    "session_status": "disconnected",
+    "is_active": false,
+    "created_at": "2026-04-16T11:27:58.516436+00:00"
+  },
+  {
+    "device_id": "cc792bc2-1dcc-4a88-a5e9-cab2d83b7caf",
+    "busi_user_id": "4ef2c42f-bda5-44f8-81bf-d9e454768bc2",
+    "device_name": "arati whatsapp device ",
+    "device_type": "web",
+    "session_status": "disconnected",
+    "is_active": false,
+    "created_at": "2026-04-20T11:51:49.902748+00:00"
+  },
+  {
+    "device_id": "03308f13-3ba7-4dfc-9a47-49c48665d3db",
+    "busi_user_id": "4ef2c42f-bda5-44f8-81bf-d9e454768bc2",
+    "device_name": "final test ",
+    "device_type": "web",
+    "session_status": "disconnected",
+    "is_active": false,
+    "created_at": "2026-04-20T05:55:00.490755+00:00"
+  },
+  {
+    "device_id": "a1c0443c-34e4-4f24-bad1-61c777dcefd8",
+    "busi_user_id": "4ef2c42f-bda5-44f8-81bf-d9e454768bc2",
+    "device_name": "web maxx",
+    "device_type": "web",
+    "session_status": "expired",
+    "is_active": false,
+    "created_at": "2026-04-20T08:10:16.559783+00:00"
+  },
+  {
+    "device_id": "392b99ac-2c11-4a03-9553-db52bcf16203",
+    "busi_user_id": "4ef2c42f-bda5-44f8-81bf-d9e454768bc2",
+    "device_name": "wp device ",
+    "device_type": "web",
+    "session_status": "disconnected",
+    "is_active": false,
+    "created_at": "2026-04-17T06:12:45.998044+00:00"
+  },
+  {
+    "device_id": "cd91f5f2-4eaf-44b7-b453-41316c6945cf",
+    "busi_user_id": "4ef2c42f-bda5-44f8-81bf-d9e454768bc2",
+    "device_name": "vikas",
+    "device_type": "web",
+    "session_status": "disconnected",
+    "is_active": false,
+    "created_at": "2026-04-21T06:13:58.862751+00:00"
+  },
+  {
+    "device_id": "f2a6b629-b8a9-4cbf-b5ee-48f4aa87a164",
+    "busi_user_id": "4ef2c42f-bda5-44f8-81bf-d9e454768bc2",
+    "device_name": "tessttt",
+    "device_type": "web",
+    "session_status": "expired",
+    "is_active": false,
+    "created_at": "2026-04-21T05:47:04.814691+00:00"
+  },
+  {
+    "device_id": "206f0998-e793-4eac-b325-3adef5584655",
+    "busi_user_id": "4ef2c42f-bda5-44f8-81bf-d9e454768bc2",
+    "device_name": "vikas tech",
+    "device_type": "web",
+    "session_status": "expired",
+    "is_active": false,
+    "created_at": "2026-04-16T09:36:07.095947+00:00"
+  },
+  {
+    "device_id": "4db3f0f6-4c51-4e08-84f4-8cf1bc2b5779",
+    "busi_user_id": "4ef2c42f-bda5-44f8-81bf-d9e454768bc2",
+    "device_name": "QR Instance",
+    "device_type": "web",
+    "session_status": "expired",
+    "is_active": false,
+    "created_at": "2026-04-21T05:10:20.923312+00:00"
+  },
+  {
+    "device_id": "da65e445-8b0d-485e-be55-e1f84f9a0202",
+    "busi_user_id": "4ef2c42f-bda5-44f8-81bf-d9e454768bc2",
+    "device_name": "jaypal",
+    "device_type": "web",
+    "session_status": "connected",
+    "is_active": true,
+    "created_at": "2026-04-21T06:29:54.579575+00:00"
+  },
+  {
+    "device_id": "5ee3d298-51c9-42aa-a45a-0420784b9296",
+    "busi_user_id": "fd2fff60-78f6-49b3-a775-dcbdbb60057a",
+    "device_name": "testing_2026",
+    "device_type": "web",
+    "session_status": "disconnected",
+    "is_active": true,
+    "created_at": "2026-04-15T18:49:44.932617+00:00"
+  },
+  {
+    "device_id": "e9051dd7-e594-4b1f-b9b9-ff307a78037f",
+    "busi_user_id": "4ef2c42f-bda5-44f8-81bf-d9e454768bc2",
+    "device_name": "vk tech solution ",
+    "device_type": "web",
+    "session_status": "disconnected",
+    "is_active": false,
+    "created_at": "2026-04-16T10:20:31.033528+00:00"
+  },
+  {
+    "device_id": "54d371b1-896c-4079-bca5-796a8da4c7c3",
+    "busi_user_id": "9817006f-ccd5-4ece-bc78-2e42e1cae979",
+    "device_name": "Arati",
+    "device_type": "web",
+    "session_status": "disconnected",
+    "is_active": true,
+    "created_at": "2026-04-13T18:05:19.243469+00:00"
+  },
+  {
+    "device_id": "f3cfa2d1-02d7-476c-b68e-24e743ce2f70",
+    "busi_user_id": "4ef2c42f-bda5-44f8-81bf-d9e454768bc2",
+    "device_name": "vikas wp ",
+    "device_type": "web",
+    "session_status": "expired",
+    "is_active": false,
+    "created_at": "2026-04-17T06:10:22.840502+00:00"
+  },
+  {
+    "device_id": "c9d44a55-dd85-497a-aaa9-25398c30f82f",
+    "busi_user_id": "fd2fff60-78f6-49b3-a775-dcbdbb60057a",
+    "device_name": "Jaycall_testing",
+    "device_type": "web",
+    "session_status": "disconnected",
+    "is_active": false,
+    "created_at": "2026-04-13T12:35:06.589561+00:00"
+  },
+  {
+    "device_id": "0230d0d8-d6e7-46c9-881d-5238e8ca3ebe",
+    "busi_user_id": "4ef2c42f-bda5-44f8-81bf-d9e454768bc2",
+    "device_name": "rcb",
+    "device_type": "web",
+    "session_status": "disconnected",
+    "is_active": false,
+    "created_at": "2026-04-16T10:32:47.546731+00:00"
+  },
+  {
+    "device_id": "8866ffc1-ee47-4eb2-944b-28b5f91c65aa",
+    "busi_user_id": "4ef2c42f-bda5-44f8-81bf-d9e454768bc2",
+    "device_name": "wp device",
+    "device_type": "web",
+    "session_status": "disconnected",
+    "is_active": false,
+    "created_at": "2026-04-16T18:02:44.177105+00:00"
+  },
+  {
+    "device_id": "0baecd72-3c20-4d3d-925c-2d81996600b5",
+    "busi_user_id": "e74e56ab-4d68-4fcd-bef7-2f7ea64ab6d2",
+    "device_name": "Vikas",
+    "device_type": "web",
+    "session_status": "expired",
+    "is_active": false,
+    "created_at": "2026-04-13T06:26:34.546248+00:00"
+  },
+  {
+    "device_id": "540538b0-6b90-4d9f-8372-892dde611e23",
+    "busi_user_id": "e74e56ab-4d68-4fcd-bef7-2f7ea64ab6d2",
+    "device_name": "whatsappp_Platform",
+    "device_type": "web",
+    "session_status": "expired",
+    "is_active": false,
+    "created_at": "2026-04-16T05:31:36.423929+00:00"
+  },
+  {
+    "device_id": "d56ef42b-1efb-49cf-8050-fd3ec53f2247",
+    "busi_user_id": "fd2fff60-78f6-49b3-a775-dcbdbb60057a",
+    "device_name": "jaycall testing",
+    "device_type": "web",
+    "session_status": "disconnected",
+    "is_active": false,
+    "created_at": "2026-04-13T12:20:24.227601+00:00"
+  },
+  {
+    "device_id": "a2d0111a-b2ab-465d-b451-7b3ef1a24ad4",
+    "busi_user_id": "4ef2c42f-bda5-44f8-81bf-d9e454768bc2",
+    "device_name": "test admin ",
+    "device_type": "web",
+    "session_status": "disconnected",
+    "is_active": false,
+    "created_at": "2026-04-13T08:32:03.499274+00:00"
+  },
+  {
+    "device_id": "ecb2576e-9ddc-4fe6-97f9-db98ef32a3cd",
+    "busi_user_id": "4ef2c42f-bda5-44f8-81bf-d9e454768bc2",
+    "device_name": "whatsapp web device ",
+    "device_type": "web",
+    "session_status": "disconnected",
+    "is_active": false,
+    "created_at": "2026-04-20T06:13:41.269278+00:00"
+  },
+  {
+    "device_id": "28342ab1-686c-4ce3-a42e-9fca3c472096",
+    "busi_user_id": "4ef2c42f-bda5-44f8-81bf-d9e454768bc2",
+    "device_name": "final test 1",
+    "device_type": "web",
+    "session_status": "disconnected",
+    "is_active": false,
+    "created_at": "2026-04-21T05:24:13.920923+00:00"
+  },
+  {
+    "device_id": "af419587-f4f0-40c3-8ab7-1d8522178039",
+    "busi_user_id": "fd2fff60-78f6-49b3-a775-dcbdbb60057a",
+    "device_name": "testing",
+    "device_type": "web",
+    "session_status": "disconnected",
+    "is_active": false,
+    "created_at": "2026-04-14T17:52:55.954608+00:00"
+  },
+  {
+    "device_id": "22e9afcd-83e5-4e11-8621-4be2aef375c2",
+    "busi_user_id": "4ef2c42f-bda5-44f8-81bf-d9e454768bc2",
+    "device_name": "render test ",
+    "device_type": "web",
+    "session_status": "disconnected",
+    "is_active": false,
+    "created_at": "2026-04-20T10:40:07.727153+00:00"
+  },
+  {
+    "device_id": "7cb21dce-449b-44b4-ba29-4dc7e7af7acd",
+    "busi_user_id": "e74e56ab-4d68-4fcd-bef7-2f7ea64ab6d2",
+    "device_name": "whatsapp_platform",
+    "device_type": "web",
+    "session_status": "expired",
+    "is_active": true,
+    "created_at": "2026-04-17T07:49:42.128342+00:00"
+  },
+  {
+    "device_id": "8e3fb09f-c1cb-405a-b293-40039a4e5396",
+    "busi_user_id": "e74e56ab-4d68-4fcd-bef7-2f7ea64ab6d2",
+    "device_name": "Jaypal",
+    "device_type": "web",
+    "session_status": "expired",
+    "is_active": true,
+    "created_at": "2026-04-15T04:48:33.763637+00:00"
+  },
+  {
+    "device_id": "6bd5a404-2172-40b0-8848-7358a7cee80e",
+    "busi_user_id": "4ef2c42f-bda5-44f8-81bf-d9e454768bc2",
+    "device_name": "mother mobile device ",
+    "device_type": "web",
+    "session_status": "disconnected",
+    "is_active": false,
+    "created_at": "2026-04-16T13:34:15.337826+00:00"
+  },
+  {
+    "device_id": "86be3a3e-62c0-49b5-9e37-9e6d46f68af4",
+    "busi_user_id": "4ef2c42f-bda5-44f8-81bf-d9e454768bc2",
+    "device_name": "web",
+    "device_type": "web",
+    "session_status": "disconnected",
+    "is_active": false,
+    "created_at": "2026-04-16T16:50:35.054350+00:00"
+  },
+  {
+    "device_id": "44681a8b-999a-4bbf-9855-a3ac12b39cce",
+    "busi_user_id": "4ef2c42f-bda5-44f8-81bf-d9e454768bc2",
+    "device_name": "qr web ",
+    "device_type": "web",
+    "session_status": "disconnected",
+    "is_active": false,
+    "created_at": "2026-04-20T11:39:41.512975+00:00"
+  },
+  {
+    "device_id": "2acac84a-8940-44e4-a7cd-aea021c9cc53",
+    "busi_user_id": "4ef2c42f-bda5-44f8-81bf-d9e454768bc2",
+    "device_name": "vikas whatsapp device ",
+    "device_type": "web",
+    "session_status": "disconnected",
+    "is_active": false,
+    "created_at": "2026-04-20T11:49:59.291047+00:00"
+  },
+  {
+    "device_id": "e0266dcb-d968-4180-988f-9542c77bfc1a",
+    "busi_user_id": "e74e56ab-4d68-4fcd-bef7-2f7ea64ab6d2",
+    "device_name": "Arati",
+    "device_type": "web",
+    "session_status": "disconnected",
+    "is_active": true,
+    "created_at": "2026-04-10T12:45:36.167261+00:00"
+  }
+]

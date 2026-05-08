@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "a9d7e3c1-4b8f-4e5a-9d2c-8f1e2a3b4c5d",
+		"name": "WhatsApp Platform API (Final Complete)",
+		"description": "Final comprehensive Postman Collection for all system APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Resellers",
+			"item": [
+				{ "name": "/api/resellers/register", "request": { "method": "POST", "url": "{{base_url}}/api/resellers/register", "body": { "mode": "raw", "raw": "{\"name\": \"John Doe\", \"username\": \"johndoe\", \"email\": \"johndoe@example.com\", \"password\": \"securepassword\", \"phone\": \"919876543210\", \"business_name\": \"John's Business\"}" }, "header": [{ "key": "Content-Type", "value": "application/json" }] } },
+				{ "name": "/api/resellers/login", "request": { "method": "POST", "url": "{{base_url}}/api/resellers/login", "body": { "mode": "raw", "raw": "{\"email\": \"johndoe@example.com\", \"password\": \"securepassword\"}" }, "header": [{ "key": "Content-Type", "value": "application/json" }] } },
+				{ "name": "/api/resellers/logout", "request": { "method": "POST", "url": "{{base_url}}/api/resellers/logout" } },
+				{ "name": "/api/resellers/me (GET)", "request": { "method": "GET", "url": "{{base_url}}/api/resellers/me" } },
+				{ "name": "/api/resellers/me (PUT)", "request": { "method": "PUT", "url": "{{base_url}}/api/resellers/me" } },
+				{ "name": "/api/resellers/", "request": { "method": "GET", "url": "{{base_url}}/api/resellers/" } },
+				{ "name": "/api/resellers/{reseller_id}", "request": { "method": "GET", "url": "{{base_url}}/api/resellers/{{reseller_id}}" } },
+				{ "name": "/resellers/ (Compatibility)", "item": [
+					{ "name": "register", "request": { "method": "POST", "url": "{{base_url}}/resellers/register" } },
+					{ "name": "login", "request": { "method": "POST", "url": "{{base_url}}/resellers/login" } },
+					{ "name": "logout", "request": { "method": "POST", "url": "{{base_url}}/resellers/logout" } },
+					{ "name": "me (GET)", "request": { "method": "GET", "url": "{{base_url}}/resellers/me" } },
+					{ "name": "me (PUT)", "request": { "method": "PUT", "url": "{{base_url}}/resellers/me" } },
+					{ "name": "get resellers", "request": { "method": "GET", "url": "{{base_url}}/resellers/" } },
+					{ "name": "get by id", "request": { "method": "GET", "url": "{{base_url}}/resellers/{{reseller_id}}" } }
+				]}
+			]
+		},
+		{
+			"name": "busi_users",
+			"item": [
+				{ "name": "/api/busi_users/my-users", "request": { "method": "GET", "url": "{{base_url}}/api/busi_users/my-users" } },
+				{ "name": "/api/busi_users/me", "request": { "method": "GET", "url": "{{base_url}}/api/busi_users/me" } },
+				{ "name": "/api/busi_users/analytics", "request": { "method": "GET", "url": "{{base_url}}/api/busi_users/analytics" } },
+				{ "name": "/api/busi_users/register", "request": { "method": "POST", "url": "{{base_url}}/api/busi_users/register" } },
+				{ "name": "/api/busi_users/login", "request": { "method": "POST", "url": "{{base_url}}/api/busi_users/login" } },
+				{ "name": "/api/busi_users/", "request": { "method": "GET", "url": "{{base_url}}/api/busi_users/" } },
+				{ "name": "/api/busi_users/reseller/{reseller_id}", "request": { "method": "GET", "url": "{{base_url}}/api/busi_users/reseller/{{reseller_id}}" } },
+				{ "name": "/api/busi_users/{busi_user_id}", "request": { "method": "GET", "url": "{{base_url}}/api/busi_users/{{busi_user_id}}" } },
+				{ "name": "/api/busi_users/logout", "request": { "method": "POST", "url": "{{base_url}}/api/busi_users/logout" } },
+				{ "name": "/busi_users (Compatibility)", "item": [
+					{ "name": "my-users", "request": { "method": "GET", "url": "{{base_url}}/busi_users/my-users" } },
+					{ "name": "me", "request": { "method": "GET", "url": "{{base_url}}/busi_users/me" } },
+					{ "name": "analytics", "request": { "method": "GET", "url": "{{base_url}}/busi_users/analytics" } },
+					{ "name": "register", "request": { "method": "POST", "url": "{{base_url}}/busi_users/register" } },
+					{ "name": "login", "request": { "method": "POST", "url": "{{base_url}}/busi_users/login" } },
+					{ "name": "logout", "request": { "method": "POST", "url": "{{base_url}}/busi_users/logout" } }
+				]}
+			]
+		},
+		{
+			"name": "Credit Distribution",
+			"item": [
+				{ "name": "POST /api/credits/distribute", "request": { "method": "POST", "url": "{{base_url}}/api/credits/distribute" } },
+				{ "name": "GET /api/credits/history/reseller", "request": { "method": "GET", "url": "{{base_url}}/api/credits/history/reseller" } },
+				{ "name": "GET /api/credits/history/business/{business_id}", "request": { "method": "GET", "url": "{{base_url}}/api/credits/history/business/{{busi_user_id}}" } }
+			]
+		},
+		{
+			"name": "Devices",
+			"item": [
+				{ "name": "POST /api/devices/register", "request": { "method": "POST", "url": "{{base_url}}/api/devices/register" } },
+				{ "name": "GET /api/devices/", "request": { "method": "GET", "url": "{{base_url}}/api/devices/" } },
+				{ "name": "GET /api/devices/unofficial/connected", "request": { "method": "GET", "url": "{{base_url}}/api/devices/unofficial/connected" } },
+				{ "name": "PATCH /api/devices/{device_id}/status", "request": { "method": "PATCH", "url": "{{base_url}}/api/devices/{{device_id}}/status" } },
+				{ "name": "POST /api/devices/{device_id}/start", "request": { "method": "POST", "url": "{{base_url}}/api/devices/{{device_id}}/start" } },
+				{ "name": "GET /api/devices/{device_id}/qr", "request": { "method": "GET", "url": "{{base_url}}/api/devices/{{device_id}}/qr" } },
+				{ "name": "/devices/ (Compatibility)", "item": [
+					{ "name": "register", "request": { "method": "POST", "url": "{{base_url}}/devices/register" } },
+					{ "name": "list", "request": { "method": "GET", "url": "{{base_url}}/devices/" } },
+					{ "name": "qr", "request": { "method": "GET", "url": "{{base_url}}/devices/{{device_id}}/qr" } }
+				]}
+			]
+		},
+		{
+			"name": "Device Sessions",
+			"item": [
+				{ "name": "POST /api/device-sessions/", "request": { "method": "POST", "url": "{{base_url}}/api/device-sessions/" } },
+				{ "name": "GET /api/device-sessions/{session_id}", "request": { "method": "GET", "url": "{{base_url}}/api/device-sessions/{{session_id}}" } },
+				{ "name": "POST /api/device-sessions/validate", "request": { "method": "POST", "url": "{{base_url}}/api/device-sessions/validate" } },
+				{ "name": "POST /api/device-sessions/cleanup/expired", "request": { "method": "POST", "url": "{{base_url}}/api/device-sessions/cleanup/expired" } }
+			]
+		},
+		{
+			"name": "Credits & v1",
+			"item": [
+				{ "name": "GET /api/v1/credits/balance", "request": { "method": "GET", "url": "{{base_url}}/api/v1/credits/balance" } },
+				{ "name": "GET /api/v1/credits/summary", "request": { "method": "GET", "url": "{{base_url}}/api/v1/credits/summary" } },
+				{ "name": "POST /api/v1/credits/purchase-plan", "request": { "method": "POST", "url": "{{base_url}}/api/v1/credits/purchase-plan" } },
+				{ "name": "POST /api/v1/credits/initiate-payment", "request": { "method": "POST", "url": "{{base_url}}/api/v1/credits/initiate-payment" } },
+				{ "name": "/v1/credits/ (Compatibility)", "item": [
+					{ "name": "balance", "request": { "method": "GET", "url": "{{base_url}}/v1/credits/balance" } },
+					{ "name": "summary", "request": { "method": "GET", "url": "{{base_url}}/v1/credits/summary" } },
+					{ "name": "purchase-plan", "request": { "method": "POST", "url": "{{base_url}}/v1/credits/purchase-plan" } }
+				]}
+			]
+		},
+		{
+			"name": "Compatibility (Global)",
+			"item": [
+				{ "name": "POST /auth/change-password", "request": { "method": "POST", "url": "{{base_url}}/auth/change-password" } },
+				{ "name": "POST /auth/refresh-token", "request": { "method": "POST", "url": "{{base_url}}/auth/refresh-token" } },
+				{ "name": "GET /user/devices", "request": { "method": "GET", "url": "{{base_url}}/user/devices" } },
+				{ "name": "POST /user/message/unofficial", "request": { "method": "POST", "url": "{{base_url}}/user/message/unofficial" } },
+				{ "name": "GET /user/delivery-reports", "request": { "method": "GET", "url": "{{base_url}}/user/delivery-reports" } }
+			]
+		},
+		{
+			"name": "Groups",
+			"item": [
+				{ "name": "GET /api/groups/", "request": { "method": "GET", "url": "{{base_url}}/api/groups/" } },
+				{ "name": "POST /api/groups/create", "request": { "method": "POST", "url": "{{base_url}}/api/groups/create" } },
+				{ "name": "GET /api/groups/{group_id}/contacts", "request": { "method": "GET", "url": "{{base_url}}/api/groups/{{group_id}}/contacts" } },
+				{ "name": "POST /api/groups/send-message", "request": { "method": "POST", "url": "{{base_url}}/api/groups/send-message" } }
+			]
+		},
+		{
+			"name": "Replies & Templates",
+			"item": [
+				{ "name": "GET /api/replies/unread-count", "request": { "method": "GET", "url": "{{base_url}}/api/replies/unread-count" } },
+				{ "name": "GET /api/replies", "request": { "method": "GET", "url": "{{base_url}}/api/replies" } },
+				{ "name": "POST /api/replies/send", "request": { "method": "POST", "url": "{{base_url}}/api/replies/send" } },
+				{ "name": "GET /api/quick-replies/quick-replies", "request": { "method": "GET", "url": "{{base_url}}/api/quick-replies/quick-replies" } }
+			]
+		},
+		{
+			"name": "Campaign API",
+			"item": [
+				{ "name": "POST /api/campaign/create", "request": { "method": "POST", "url": "{{base_url}}/api/campaign/create" } },
+				{ "name": "POST /api/campaign/{campaign_id}/start", "request": { "method": "POST", "url": "{{base_url}}/api/campaign/{{campaign_id}}/start" } },
+				{ "name": "GET /api/campaign/{campaign_id}/status", "request": { "method": "GET", "url": "{{base_url}}/api/campaign/{{campaign_id}}/status" } }
+			]
+		},
+		{
+			"name": "Google Sheets",
+			"item": [
+				{ "name": "GET /api/google-sheets/", "request": { "method": "GET", "url": "{{base_url}}/api/google-sheets/" } },
+				{ "name": "POST /api/google-sheets/connect", "request": { "method": "POST", "url": "{{base_url}}/api/google-sheets/connect" } },
+				{ "name": "POST /api/google-sheets/{sheet_id}/messaging", "request": { "method": "POST", "url": "{{base_url}}/api/google-sheets/{{sheet_id}}/messaging" } },
+				{ "name": "GET /api/google-sheets/triggers/history", "request": { "method": "GET", "url": "{{base_url}}/api/google-sheets/triggers/history" } }
+			]
+		},
+		{
+			"name": "Official WhatsApp",
+			"item": [
+				{ "name": "POST /api/official-whatsapp/config", "request": { "method": "POST", "url": "{{base_url}}/api/official-whatsapp/config" } },
+				{ "name": "POST /api/official-whatsapp/config/send-text", "request": { "method": "POST", "url": "{{base_url}}/api/official-whatsapp/config/send-text" } }
+			]
+		},
+		{
+			"name": "Public API (Unofficial)",
+			"item": [
+				{ "name": "POST /api/unofficial/send-message", "request": { "method": "POST", "url": "{{base_url}}/api/unofficial/send-message" } },
+				{ "name": "POST /api/unofficial/bulk-send-messages", "request": { "method": "POST", "url": "{{base_url}}/api/unofficial/bulk-send-messages" } },
+				{ "name": "GET /api/unofficial/delivery-report", "request": { "method": "GET", "url": "{{base_url}}/api/unofficial/delivery-report" } }
+			]
+		},
+		{
+			"name": "Public API (Official)",
+			"item": [
+				{ "name": "POST /api/official/send-message", "request": { "method": "POST", "url": "{{base_url}}/api/official/send-message" } },
+				{ "name": "GET /api/official/templates", "request": { "method": "GET", "url": "{{base_url}}/api/official/templates" } }
+			]
+		},
+		{
+			"name": "Webhooks",
+			"item": [
+				{ "name": "POST /api/webhooks/whatsapp/incoming", "request": { "method": "POST", "url": "{{base_url}}/api/webhooks/whatsapp/incoming" } },
+				{ "name": "POST /api/webhooks/whatsapp/{device_id}", "request": { "method": "POST", "url": "{{base_url}}/api/webhooks/whatsapp/{{device_id}}" } }
+			]
+		},
+		{
+			"name": "Analytics & Audit",
+			"item": [
+				{ "name": "GET /api/reseller-analytics/dashboard/{reseller_id}", "request": { "method": "GET", "url": "{{base_url}}/api/reseller-analytics/dashboard/{{reseller_id}}" } },
+				{ "name": "GET /api/audit-logs/me", "request": { "method": "GET", "url": "{{base_url}}/api/audit-logs/me" } }
+			]
+		},
+		{
+			"name": "System & Health",
+			"item": [
+				{ "name": "GET /health", "request": { "method": "GET", "url": "{{base_url}}/health" } },
+				{ "name": "GET /health/db", "request": { "method": "GET", "url": "{{base_url}}/health/db" } },
+				{ "name": "GET /sync-devices/{user_id}", "request": { "method": "GET", "url": "{{base_url}}/sync-devices/{{user_id}}" } }
+			]
+		}
+	],
+	"variable": [
+		{ "key": "base_url", "value": "https://whatsapp-platfrom-backent1.onrender.com" },
+		{ "key": "access_token", "value": "" },
+		{ "key": "device_id", "value": "" },
+		{ "key": "reseller_id", "value": "" },
+		{ "key": "busi_user_id", "value": "" },
+		{ "key": "campaign_id", "value": "" },
+		{ "key": "group_id", "value": "" },
+		{ "key": "sheet_id", "value": "" },
+		{ "key": "session_id", "value": "" }
+	]
+}

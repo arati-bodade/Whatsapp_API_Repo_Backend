@@ -1,0 +1,4 @@
+Current columns: ['sheet_id', 'user_id', 'sheet_name', 'spreadsheet_id', 'status', 'rows_count', 'last_synced_at', 'connected_at']
+Current PK: {'constrained_columns': ['sheet_id'], 'name': 'google_sheets_pkey', 'comment': None, 'dialect_options': {'postgresql_include': []}}
+
+SUCCESS: Schema fix completed.

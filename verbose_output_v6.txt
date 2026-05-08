@@ -1,0 +1,219 @@
+﻿--- STARTING VERBOSE TEST ---
+Found 2 total sheets in DB.
+Sheet: Sheet1 (ID: 681c4989-367e-4dc6-ace6-ea833a6fbe8e) | Status: SheetStatus.ACTIVE
+  -> Has 15 triggers.
+     - Trigger fba2329f-16ae-422c-8b66-b9e217653666: Type=new_row, Enabled=False, Device=ee68cf44-168c-42b0-bf69-bff71cc7110b
+     - Trigger 73f2c0b0-6a50-434f-9b26-32b41f9a1ba4: Type=new_row, Enabled=False, Device=ee68cf44-168c-42b0-bf69-bff71cc7110b
+     - Trigger 23c1d5f8-246c-4f72-b1b2-5c19feee41c2: Type=new_row, Enabled=False, Device=ee68cf44-168c-42b0-bf69-bff71cc7110b
+     - Trigger c28cc0dc-611b-40ec-b0bf-e49141b66320: Type=new_row, Enabled=False, Device=72d3ade7-2aa1-409a-9a2d-12acc0ce2c4c
+     - Trigger 7c20fc6d-60eb-46ca-a645-460384edd6e9: Type=new_row, Enabled=False, Device=72d3ade7-2aa1-409a-9a2d-12acc0ce2c4c
+     - Trigger 878dcda0-280d-4604-83db-5c732db9b391: Type=new_row, Enabled=False, Device=ee68cf44-168c-42b0-bf69-bff71cc7110b
+     - Trigger 4cf58baa-efae-425e-a5c7-71d76dcf8a99: Type=new_row, Enabled=False, Device=ee68cf44-168c-42b0-bf69-bff71cc7110b
+     - Trigger c4c9d5da-baf1-4099-ad03-66c9ca212726: Type=new_row, Enabled=False, Device=ee68cf44-168c-42b0-bf69-bff71cc7110b
+     - Trigger 7c4560a9-e306-49c5-8b2f-0fc81f9dab3e: Type=new_row, Enabled=False, Device=ee68cf44-168c-42b0-bf69-bff71cc7110b
+     - Trigger dfacb0ee-923c-4923-a9fe-77fe4e26f42b: Type=new_row, Enabled=False, Device=ee68cf44-168c-42b0-bf69-bff71cc7110b
+     - Trigger d47abf0d-3114-4f2f-8795-563f3e74e8d7: Type=new_row, Enabled=False, Device=ee68cf44-168c-42b0-bf69-bff71cc7110b
+     - Trigger 1a4b5a37-dbe6-403a-8d8c-c7a4fb54b006: Type=new_row, Enabled=False, Device=ee68cf44-168c-42b0-bf69-bff71cc7110b
+     - Trigger 9607d4aa-25be-4ff5-ad3a-be89050a6da9: Type=new_row, Enabled=False, Device=ee68cf44-168c-42b0-bf69-bff71cc7110b
+     - Trigger ef8f9418-0fe3-43b2-92bc-880e91c17f49: Type=new_row, Enabled=False, Device=ee68cf44-168c-42b0-bf69-bff71cc7110b
+     - Trigger 3f2bb0f1-ea44-4861-85e0-9f4de8733a4c: Type=new_row, Enabled=False, Device=ee68cf44-168c-42b0-bf69-bff71cc7110b
+Sheet: Sheet1 (ID: f33f2f7a-07ac-4aa5-9a1f-504055ea77c0) | Status: SheetStatus.ACTIVE
+  -> Has 10 triggers.
+     - Trigger 1307b3d8-1361-495a-aff2-dbaa90288de1: Type=update_row, Enabled=True, Device=d8c64c0c-f012-4047-8f14-e91f9f709154
+     - Trigger 2aceb150-c28f-4501-b69f-5541f7fa231b: Type=update_row, Enabled=False, Device=d8c64c0c-f012-4047-8f14-e91f9f709154
+     - Trigger 2d2c99a0-925f-457e-8456-5f3f58bddf2f: Type=update_row, Enabled=False, Device=d8c64c0c-f012-4047-8f14-e91f9f709154
+     - Trigger 43f9ddb7-5153-4a94-a775-4db78fb308e9: Type=update_row, Enabled=False, Device=d8c64c0c-f012-4047-8f14-e91f9f709154
+     - Trigger 4da506e8-f56c-498c-9ff1-7b084da0296c: Type=update_row, Enabled=False, Device=d8c64c0c-f012-4047-8f14-e91f9f709154
+     - Trigger 693dccce-3ceb-4f20-8867-8958e52dc658: Type=update_row, Enabled=False, Device=d8c64c0c-f012-4047-8f14-e91f9f709154
+     - Trigger b900ebce-2f4a-4a70-969c-0e378d0aec32: Type=update_row, Enabled=False, Device=d8c64c0c-f012-4047-8f14-e91f9f709154
+     - Trigger bbb69c7b-0460-4ab7-85bb-e76a6a31e6ff: Type=update_row, Enabled=False, Device=d8c64c0c-f012-4047-8f14-e91f9f709154
+     - Trigger b9bfd8aa-f141-401c-bc12-11bcaa49a25c: Type=time, Enabled=False, Device=d8c64c0c-f012-4047-8f14-e91f9f709154
+     - Trigger manual_test_1773226971: Type=time, Enabled=False, Device=d8c64c0c-f012-4047-8f14-e91f9f709154
+2026-03-12 17:43:58,286 - services.google_sheets_service - INFO - Service Account JSON found at: E:\whatsapp_platform_api\wh-api-backend-vikas\credentials\google-service-account.json
+
+≡ƒÜÇ EXECUTING process_all_active_triggers()...
+2026-03-12 17:43:58,286 - services.google_sheets_automation_unofficial_only - WARNING - ΓÜá∩╕Å  LEGACY METHOD CALLED: process_all_active_triggers() - This should only be called via on-demand API
+2026-03-12 17:43:58,796 - services.google_sheets_automation_unofficial_only - INFO - ≡ƒÜÇ Processing triggers for 2 active sheets
+2026-03-12 17:43:58,848 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-03-12 17:43:58,852 - services.google_sheets_service - INFO - Fetching data from spreadsheet 1eF28T3dsJ78IaDSVQI0T3wvCD9lQBkqHhzjgYE1mEjw, range: Sheet1!A:Z
+2026-03-12 17:43:59,771 - services.google_sheets_service - INFO - Successfully fetched 7 rows with 5 columns from 1eF28T3dsJ78IaDSVQI0T3wvCD9lQBkqHhzjgYE1mEjw
+2026-03-12 17:43:59,772 - services.google_sheets_automation_unofficial_only - INFO - ≡ƒôï Processing triggers for sheet Sheet1 (681c4989-367e-4dc6-ace6-ea833a6fbe8e)
+2026-03-12 17:43:59,773 - services.google_sheets_automation_unofficial_only - INFO -    Sheet has 7 rows and 5 columns
+2026-03-12 17:44:00,025 - services.google_sheets_automation_unofficial_only - INFO -    No enabled triggers found for sheet Sheet1
+2026-03-12 17:44:00,069 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-03-12 17:44:00,072 - services.google_sheets_service - INFO - Fetching data from spreadsheet 1eF28T3dsJ78IaDSVQI0T3wvCD9lQBkqHhzjgYE1mEjw, range: Sheet1!A:Z
+2026-03-12 17:44:01,060 - services.google_sheets_service - INFO - Successfully fetched 7 rows with 5 columns from 1eF28T3dsJ78IaDSVQI0T3wvCD9lQBkqHhzjgYE1mEjw
+2026-03-12 17:44:01,060 - services.google_sheets_automation_unofficial_only - INFO - ≡ƒôï Processing triggers for sheet Sheet1 (f33f2f7a-07ac-4aa5-9a1f-504055ea77c0)
+2026-03-12 17:44:01,061 - services.google_sheets_automation_unofficial_only - INFO -    Sheet has 7 rows and 5 columns
+2026-03-12 17:44:01,308 - services.google_sheets_automation_unofficial_only - INFO -    Found 1 enabled triggers
+2026-03-12 17:44:01,308 - services.google_sheets_automation_unofficial_only - INFO - ≡ƒÄ» Processing trigger 1307b3d8-1361-495a-aff2-dbaa90288de1
+2026-03-12 17:44:01,309 - services.google_sheets_automation_unofficial_only - INFO -    Using Device ID: d8c64c0c-f012-4047-8f14-e91f9f709154 (Trigger: d8c64c0c-f012-4047-8f14-e91f9f709154, Sheet: d8c64c0c-f012-4047-8f14-e91f9f709154)
+2026-03-12 17:44:01,309 - services.google_sheets_automation_unofficial_only - INFO -    Phone Column: Phone
+2026-03-12 17:44:01,309 - services.google_sheets_automation_unofficial_only - INFO -    Status Column: Status
+2026-03-12 17:44:01,309 - services.google_sheets_automation_unofficial_only - INFO -    Trigger Value: Send
+2026-03-12 17:44:01,572 - services.google_sheets_automation_unofficial_only - INFO -    Row 2: Inspecting row data: {'Phone': '9145291501', 'Name': 'Device Test 1', 'Send_time': '17:38:00 PM', 'Message': 'DEVICE TRIGGER TEST 1 - 10:30:00 AM', 'Status': 'Send'}
+2026-03-12 17:44:01,572 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒÄ» Row 2: Status 'Send' matches trigger value
+2026-03-12 17:44:01,572 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒô¥ Using message from column 'Message': 'DEVICE TRIGGER TEST 1 - 10:30:00 AM...'
+2026-03-12 17:44:01,572 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒô¥ Updated row 2 status to 'Processing' in column 'Status'
+2026-03-12 17:44:01,573 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒôñ Sending WhatsApp message for row 2
+2026-03-12 17:44:01,573 - services.google_sheets_automation_unofficial_only - INFO -    Phone: +919145291501
+2026-03-12 17:44:01,573 - services.google_sheets_automation_unofficial_only - INFO -    Device: d8c64c0c-f012-4047-8f14-e91f9f709154
+2026-03-12 17:44:01,573 - services.google_sheets_automation_unofficial_only - INFO -    Message: DEVICE TRIGGER TEST 1 - 10:30:00 AM...
+2026-03-12 17:44:01,573 - services.unified_whatsapp_sender - INFO - ≡ƒÜÇ UNIFIED SEND: Starting message delivery
+2026-03-12 17:44:01,573 - services.unified_whatsapp_sender - INFO -    Device ID: d8c64c0c-f012-4047-8f14-e91f9f709154
+2026-03-12 17:44:01,573 - services.unified_whatsapp_sender - INFO -    Raw Phone: +919145291501
+2026-03-12 17:44:01,573 - services.unified_whatsapp_sender - WARNING - [PHONE VALIDATION] Final sending JID: 919145291501@s.whatsapp.net
+2026-03-12 17:44:01,573 - services.unified_whatsapp_sender - INFO -    Normalized Phone: 919145291501
+2026-03-12 17:44:01,573 - services.unified_whatsapp_sender - INFO -    JID: 919145291501@s.whatsapp.net
+2026-03-12 17:44:02,578 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒô¥ Updated row 2 status to 'Sent' in column 'Status'
+2026-03-12 17:44:03,105 - services.google_sheets_automation_unofficial_only - ERROR -    Failed to save trigger history: (psycopg2.errors.UndefinedColumn) column "device_id" of relation "sheet_trigger_history" does not exist
+LINE 1: ... sheet_trigger_history (id, sheet_id, trigger_id, device_id,...
+                                                             ^
+
+[SQL: INSERT INTO sheet_trigger_history (id, sheet_id, trigger_id, device_id, phone_number, message_content, status, error_message, triggered_at, row_data) VALUES (%(id)s::UUID, %(sheet_id)s::UUID, %(trigger_id)s, %(device_id)s::UUID, %(phone_number)s, %(message_content)s, %(status)s, %(error_message)s, %(triggered_at)s, %(row_data)s::JSON)]
+[parameters: {'id': UUID('7e38ffdd-6312-45bd-a995-bca4d851ee89'), 'sheet_id': UUID('f33f2f7a-07ac-4aa5-9a1f-504055ea77c0'), 'trigger_id': '1307b3d8-1361-495a-aff2-dbaa90288de1', 'device_id': UUID('d8c64c0c-f012-4047-8f14-e91f9f709154'), 'phone_number': '+919145291501', 'message_content': 'DEVICE TRIGGER TEST 1 - 10:30:00 AM', 'status': 'sent', 'error_message': None, 'triggered_at': datetime.datetime(2026, 3, 12, 17, 44, 2, 578441), 'row_data': '{"row_number": 2, "trigger_id": "1307b3d8-1361-495a-aff2-dbaa90288de1", "message_id": "pending_1773317642576_klegcd3bt"}'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-03-12 17:44:03,105 - services.google_sheets_automation_unofficial_only - INFO -    Γ£à Row 2: Message sent successfully
+2026-03-12 17:44:03,883 - services.google_sheets_automation_unofficial_only - INFO -    Row 3: Inspecting row data: {'Phone': '7507640770', 'Name': 'Device Test 2', 'Send_time': '17:37:00 PM', 'Message': 'DEVICE TRIGGER TEST 2 - 04:07:30 PM', 'Status': 'Send'}
+2026-03-12 17:44:03,883 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒÄ» Row 3: Status 'Send' matches trigger value
+2026-03-12 17:44:03,883 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒô¥ Using message from column 'Message': 'DEVICE TRIGGER TEST 2 - 04:07:30 PM...'
+2026-03-12 17:44:03,884 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒô¥ Updated row 3 status to 'Processing' in column 'Status'
+2026-03-12 17:44:03,884 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒôñ Sending WhatsApp message for row 3
+2026-03-12 17:44:03,884 - services.google_sheets_automation_unofficial_only - INFO -    Phone: +917507640770
+2026-03-12 17:44:03,884 - services.google_sheets_automation_unofficial_only - INFO -    Device: d8c64c0c-f012-4047-8f14-e91f9f709154
+2026-03-12 17:44:03,884 - services.google_sheets_automation_unofficial_only - INFO -    Message: DEVICE TRIGGER TEST 2 - 04:07:30 PM...
+2026-03-12 17:44:03,884 - services.unified_whatsapp_sender - INFO - ≡ƒÜÇ UNIFIED SEND: Starting message delivery
+2026-03-12 17:44:03,884 - services.unified_whatsapp_sender - INFO -    Device ID: d8c64c0c-f012-4047-8f14-e91f9f709154
+2026-03-12 17:44:03,884 - services.unified_whatsapp_sender - INFO -    Raw Phone: +917507640770
+2026-03-12 17:44:03,885 - services.unified_whatsapp_sender - WARNING - [PHONE VALIDATION] Final sending JID: 917507640770@s.whatsapp.net
+2026-03-12 17:44:03,885 - services.unified_whatsapp_sender - INFO -    Normalized Phone: 917507640770
+2026-03-12 17:44:03,885 - services.unified_whatsapp_sender - INFO -    JID: 917507640770@s.whatsapp.net
+2026-03-12 17:44:04,892 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒô¥ Updated row 3 status to 'Sent' in column 'Status'
+2026-03-12 17:44:05,660 - services.google_sheets_automation_unofficial_only - ERROR -    Failed to save trigger history: (psycopg2.errors.UndefinedColumn) column "device_id" of relation "sheet_trigger_history" does not exist
+LINE 1: ... sheet_trigger_history (id, sheet_id, trigger_id, device_id,...
+                                                             ^
+
+[SQL: INSERT INTO sheet_trigger_history (id, sheet_id, trigger_id, device_id, phone_number, message_content, status, error_message, triggered_at, row_data) VALUES (%(id)s::UUID, %(sheet_id)s::UUID, %(trigger_id)s, %(device_id)s::UUID, %(phone_number)s, %(message_content)s, %(status)s, %(error_message)s, %(triggered_at)s, %(row_data)s::JSON)]
+[parameters: {'id': UUID('8d468fe4-ac27-4f9a-bd90-477a12b985a4'), 'sheet_id': UUID('f33f2f7a-07ac-4aa5-9a1f-504055ea77c0'), 'trigger_id': '1307b3d8-1361-495a-aff2-dbaa90288de1', 'device_id': UUID('d8c64c0c-f012-4047-8f14-e91f9f709154'), 'phone_number': '+917507640770', 'message_content': 'DEVICE TRIGGER TEST 2 - 04:07:30 PM', 'status': 'sent', 'error_message': None, 'triggered_at': datetime.datetime(2026, 3, 12, 17, 44, 5, 151726), 'row_data': '{"row_number": 3, "trigger_id": "1307b3d8-1361-495a-aff2-dbaa90288de1", "message_id": "pending_1773317644889_xl1et33w8"}'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-03-12 17:44:05,660 - services.google_sheets_automation_unofficial_only - INFO -    Γ£à Row 3: Message sent successfully
+2026-03-12 17:44:06,410 - services.google_sheets_automation_unofficial_only - INFO -    Row 4: Inspecting row data: {'Phone': '9763615565', 'Name': 'Device Test 3', 'Send_time': '17:40:00 PM', 'Message': 'DEVICE TRIGGER TEST 3 - 04:07:30 PM', 'Status': 'Send'}
+2026-03-12 17:44:06,410 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒÄ» Row 4: Status 'Send' matches trigger value
+2026-03-12 17:44:06,410 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒô¥ Using message from column 'Message': 'DEVICE TRIGGER TEST 3 - 04:07:30 PM...'
+2026-03-12 17:44:06,410 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒô¥ Updated row 4 status to 'Processing' in column 'Status'
+2026-03-12 17:44:06,410 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒôñ Sending WhatsApp message for row 4
+2026-03-12 17:44:06,410 - services.google_sheets_automation_unofficial_only - INFO -    Phone: +919763615565
+2026-03-12 17:44:06,410 - services.google_sheets_automation_unofficial_only - INFO -    Device: d8c64c0c-f012-4047-8f14-e91f9f709154
+2026-03-12 17:44:06,410 - services.google_sheets_automation_unofficial_only - INFO -    Message: DEVICE TRIGGER TEST 3 - 04:07:30 PM...
+2026-03-12 17:44:06,410 - services.unified_whatsapp_sender - INFO - ≡ƒÜÇ UNIFIED SEND: Starting message delivery
+2026-03-12 17:44:06,410 - services.unified_whatsapp_sender - INFO -    Device ID: d8c64c0c-f012-4047-8f14-e91f9f709154
+2026-03-12 17:44:06,410 - services.unified_whatsapp_sender - INFO -    Raw Phone: +919763615565
+2026-03-12 17:44:06,410 - services.unified_whatsapp_sender - WARNING - [PHONE VALIDATION] Final sending JID: 919763615565@s.whatsapp.net
+2026-03-12 17:44:06,410 - services.unified_whatsapp_sender - INFO -    Normalized Phone: 919763615565
+2026-03-12 17:44:06,410 - services.unified_whatsapp_sender - INFO -    JID: 919763615565@s.whatsapp.net
+2026-03-12 17:44:07,414 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒô¥ Updated row 4 status to 'Sent' in column 'Status'
+2026-03-12 17:44:08,168 - services.google_sheets_automation_unofficial_only - ERROR -    Failed to save trigger history: (psycopg2.errors.UndefinedColumn) column "device_id" of relation "sheet_trigger_history" does not exist
+LINE 1: ... sheet_trigger_history (id, sheet_id, trigger_id, device_id,...
+                                                             ^
+
+[SQL: INSERT INTO sheet_trigger_history (id, sheet_id, trigger_id, device_id, phone_number, message_content, status, error_message, triggered_at, row_data) VALUES (%(id)s::UUID, %(sheet_id)s::UUID, %(trigger_id)s, %(device_id)s::UUID, %(phone_number)s, %(message_content)s, %(status)s, %(error_message)s, %(triggered_at)s, %(row_data)s::JSON)]
+[parameters: {'id': UUID('6314ee88-b0bd-4aae-baf4-6d9a86115746'), 'sheet_id': UUID('f33f2f7a-07ac-4aa5-9a1f-504055ea77c0'), 'trigger_id': '1307b3d8-1361-495a-aff2-dbaa90288de1', 'device_id': UUID('d8c64c0c-f012-4047-8f14-e91f9f709154'), 'phone_number': '+919763615565', 'message_content': 'DEVICE TRIGGER TEST 3 - 04:07:30 PM', 'status': 'sent', 'error_message': None, 'triggered_at': datetime.datetime(2026, 3, 12, 17, 44, 7, 664477), 'row_data': '{"row_number": 4, "trigger_id": "1307b3d8-1361-495a-aff2-dbaa90288de1", "message_id": "pending_1773317647413_ch12el9ck"}'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-03-12 17:44:08,168 - services.google_sheets_automation_unofficial_only - INFO -    Γ£à Row 4: Message sent successfully
+2026-03-12 17:44:08,932 - services.google_sheets_automation_unofficial_only - INFO -    Row 5: Inspecting row data: {'Phone': '7507640770', 'Name': 'Final Test 2', 'Send_time': '17:39:00 PM', 'Message': 'FINAL TRIGGER TEST 2 - 03:21:43 PM', 'Status': 'Send'}
+2026-03-12 17:44:08,932 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒÄ» Row 5: Status 'Send' matches trigger value
+2026-03-12 17:44:08,932 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒô¥ Using message from column 'Message': 'FINAL TRIGGER TEST 2 - 03:21:43 PM...'
+2026-03-12 17:44:08,932 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒô¥ Updated row 5 status to 'Processing' in column 'Status'
+2026-03-12 17:44:08,932 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒôñ Sending WhatsApp message for row 5
+2026-03-12 17:44:08,932 - services.google_sheets_automation_unofficial_only - INFO -    Phone: +917507640770
+2026-03-12 17:44:08,932 - services.google_sheets_automation_unofficial_only - INFO -    Device: d8c64c0c-f012-4047-8f14-e91f9f709154
+2026-03-12 17:44:08,932 - services.google_sheets_automation_unofficial_only - INFO -    Message: FINAL TRIGGER TEST 2 - 03:21:43 PM...
+2026-03-12 17:44:08,933 - services.unified_whatsapp_sender - INFO - ≡ƒÜÇ UNIFIED SEND: Starting message delivery
+2026-03-12 17:44:08,933 - services.unified_whatsapp_sender - INFO -    Device ID: d8c64c0c-f012-4047-8f14-e91f9f709154
+2026-03-12 17:44:08,933 - services.unified_whatsapp_sender - INFO -    Raw Phone: +917507640770
+2026-03-12 17:44:08,933 - services.unified_whatsapp_sender - WARNING - [PHONE VALIDATION] Final sending JID: 917507640770@s.whatsapp.net
+2026-03-12 17:44:08,933 - services.unified_whatsapp_sender - INFO -    Normalized Phone: 917507640770
+2026-03-12 17:44:08,933 - services.unified_whatsapp_sender - INFO -    JID: 917507640770@s.whatsapp.net
+2026-03-12 17:44:09,937 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒô¥ Updated row 5 status to 'Sent' in column 'Status'
+2026-03-12 17:44:10,683 - services.google_sheets_automation_unofficial_only - ERROR -    Failed to save trigger history: (psycopg2.errors.UndefinedColumn) column "device_id" of relation "sheet_trigger_history" does not exist
+LINE 1: ... sheet_trigger_history (id, sheet_id, trigger_id, device_id,...
+                                                             ^
+
+[SQL: INSERT INTO sheet_trigger_history (id, sheet_id, trigger_id, device_id, phone_number, message_content, status, error_message, triggered_at, row_data) VALUES (%(id)s::UUID, %(sheet_id)s::UUID, %(trigger_id)s, %(device_id)s::UUID, %(phone_number)s, %(message_content)s, %(status)s, %(error_message)s, %(triggered_at)s, %(row_data)s::JSON)]
+[parameters: {'id': UUID('dc98c2de-8cc5-4e30-9f30-ddac8cf41d4a'), 'sheet_id': UUID('f33f2f7a-07ac-4aa5-9a1f-504055ea77c0'), 'trigger_id': '1307b3d8-1361-495a-aff2-dbaa90288de1', 'device_id': UUID('d8c64c0c-f012-4047-8f14-e91f9f709154'), 'phone_number': '+917507640770', 'message_content': 'FINAL TRIGGER TEST 2 - 03:21:43 PM', 'status': 'sent', 'error_message': None, 'triggered_at': datetime.datetime(2026, 3, 12, 17, 44, 10, 186050), 'row_data': '{"row_number": 5, "trigger_id": "1307b3d8-1361-495a-aff2-dbaa90288de1", "message_id": "pending_1773317649935_fpxwkn2hb"}'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-03-12 17:44:10,683 - services.google_sheets_automation_unofficial_only - INFO -    Γ£à Row 5: Message sent successfully
+2026-03-12 17:44:11,439 - services.google_sheets_automation_unofficial_only - INFO -    Row 6: Inspecting row data: {'Phone': '9145291501', 'Name': 'jaypal', 'Send_time': '17:45:00 PM', 'Message': 'Hello Japal , How are you', 'Status': 'Send'}
+2026-03-12 17:44:11,439 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒÄ» Row 6: Status 'Send' matches trigger value
+2026-03-12 17:44:11,439 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒô¥ Using message from column 'Message': 'Hello Japal , How are you...'
+2026-03-12 17:44:11,439 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒô¥ Updated row 6 status to 'Processing' in column 'Status'
+2026-03-12 17:44:11,439 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒôñ Sending WhatsApp message for row 6
+2026-03-12 17:44:11,439 - services.google_sheets_automation_unofficial_only - INFO -    Phone: +919145291501
+2026-03-12 17:44:11,439 - services.google_sheets_automation_unofficial_only - INFO -    Device: d8c64c0c-f012-4047-8f14-e91f9f709154
+2026-03-12 17:44:11,439 - services.google_sheets_automation_unofficial_only - INFO -    Message: Hello Japal , How are you...
+2026-03-12 17:44:11,439 - services.unified_whatsapp_sender - INFO - ≡ƒÜÇ UNIFIED SEND: Starting message delivery
+2026-03-12 17:44:11,439 - services.unified_whatsapp_sender - INFO -    Device ID: d8c64c0c-f012-4047-8f14-e91f9f709154
+2026-03-12 17:44:11,439 - services.unified_whatsapp_sender - INFO -    Raw Phone: +919145291501
+2026-03-12 17:44:11,439 - services.unified_whatsapp_sender - WARNING - [PHONE VALIDATION] Final sending JID: 919145291501@s.whatsapp.net
+2026-03-12 17:44:11,439 - services.unified_whatsapp_sender - INFO -    Normalized Phone: 919145291501
+2026-03-12 17:44:11,439 - services.unified_whatsapp_sender - INFO -    JID: 919145291501@s.whatsapp.net
+2026-03-12 17:44:12,442 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒô¥ Updated row 6 status to 'Sent' in column 'Status'
+2026-03-12 17:44:13,217 - services.google_sheets_automation_unofficial_only - ERROR -    Failed to save trigger history: (psycopg2.errors.UndefinedColumn) column "device_id" of relation "sheet_trigger_history" does not exist
+LINE 1: ... sheet_trigger_history (id, sheet_id, trigger_id, device_id,...
+                                                             ^
+
+[SQL: INSERT INTO sheet_trigger_history (id, sheet_id, trigger_id, device_id, phone_number, message_content, status, error_message, triggered_at, row_data) VALUES (%(id)s::UUID, %(sheet_id)s::UUID, %(trigger_id)s, %(device_id)s::UUID, %(phone_number)s, %(message_content)s, %(status)s, %(error_message)s, %(triggered_at)s, %(row_data)s::JSON)]
+[parameters: {'id': UUID('5f76544a-4bc3-49c3-b992-dfdae19f3a25'), 'sheet_id': UUID('f33f2f7a-07ac-4aa5-9a1f-504055ea77c0'), 'trigger_id': '1307b3d8-1361-495a-aff2-dbaa90288de1', 'device_id': UUID('d8c64c0c-f012-4047-8f14-e91f9f709154'), 'phone_number': '+919145291501', 'message_content': 'Hello Japal , How are you', 'status': 'sent', 'error_message': None, 'triggered_at': datetime.datetime(2026, 3, 12, 17, 44, 12, 693315), 'row_data': '{"row_number": 6, "trigger_id": "1307b3d8-1361-495a-aff2-dbaa90288de1", "message_id": "pending_1773317652441_bdqrlk7x1"}'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-03-12 17:44:13,217 - services.google_sheets_automation_unofficial_only - INFO -    Γ£à Row 6: Message sent successfully
+2026-03-12 17:44:13,974 - services.google_sheets_automation_unofficial_only - INFO -    Row 7: Inspecting row data: {'Phone': '7507640770', 'Name': 'vikash', 'Send_time': '17:46:00 PM', 'Message': 'Hello Vikas, How are you', 'Status': 'Send'}
+2026-03-12 17:44:13,974 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒÄ» Row 7: Status 'Send' matches trigger value
+2026-03-12 17:44:13,974 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒô¥ Using message from column 'Message': 'Hello Vikas, How are you...'
+2026-03-12 17:44:13,975 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒô¥ Updated row 7 status to 'Processing' in column 'Status'
+2026-03-12 17:44:13,975 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒôñ Sending WhatsApp message for row 7
+2026-03-12 17:44:13,975 - services.google_sheets_automation_unofficial_only - INFO -    Phone: +917507640770
+2026-03-12 17:44:13,975 - services.google_sheets_automation_unofficial_only - INFO -    Device: d8c64c0c-f012-4047-8f14-e91f9f709154
+2026-03-12 17:44:13,975 - services.google_sheets_automation_unofficial_only - INFO -    Message: Hello Vikas, How are you...
+2026-03-12 17:44:13,975 - services.unified_whatsapp_sender - INFO - ≡ƒÜÇ UNIFIED SEND: Starting message delivery
+2026-03-12 17:44:13,975 - services.unified_whatsapp_sender - INFO -    Device ID: d8c64c0c-f012-4047-8f14-e91f9f709154
+2026-03-12 17:44:13,975 - services.unified_whatsapp_sender - INFO -    Raw Phone: +917507640770
+2026-03-12 17:44:13,975 - services.unified_whatsapp_sender - WARNING - [PHONE VALIDATION] Final sending JID: 917507640770@s.whatsapp.net
+2026-03-12 17:44:13,975 - services.unified_whatsapp_sender - INFO -    Normalized Phone: 917507640770
+2026-03-12 17:44:13,975 - services.unified_whatsapp_sender - INFO -    JID: 917507640770@s.whatsapp.net
+2026-03-12 17:44:14,978 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒô¥ Updated row 7 status to 'Sent' in column 'Status'
+2026-03-12 17:44:15,728 - services.google_sheets_automation_unofficial_only - ERROR -    Failed to save trigger history: (psycopg2.errors.UndefinedColumn) column "device_id" of relation "sheet_trigger_history" does not exist
+LINE 1: ... sheet_trigger_history (id, sheet_id, trigger_id, device_id,...
+                                                             ^
+
+[SQL: INSERT INTO sheet_trigger_history (id, sheet_id, trigger_id, device_id, phone_number, message_content, status, error_message, triggered_at, row_data) VALUES (%(id)s::UUID, %(sheet_id)s::UUID, %(trigger_id)s, %(device_id)s::UUID, %(phone_number)s, %(message_content)s, %(status)s, %(error_message)s, %(triggered_at)s, %(row_data)s::JSON)]
+[parameters: {'id': UUID('6f4798f0-18a6-4a49-8fb3-b99653745c62'), 'sheet_id': UUID('f33f2f7a-07ac-4aa5-9a1f-504055ea77c0'), 'trigger_id': '1307b3d8-1361-495a-aff2-dbaa90288de1', 'device_id': UUID('d8c64c0c-f012-4047-8f14-e91f9f709154'), 'phone_number': '+917507640770', 'message_content': 'Hello Vikas, How are you', 'status': 'sent', 'error_message': None, 'triggered_at': datetime.datetime(2026, 3, 12, 17, 44, 15, 230421), 'row_data': '{"row_number": 7, "trigger_id": "1307b3d8-1361-495a-aff2-dbaa90288de1", "message_id": "pending_1773317654977_flzryb4ya"}'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-03-12 17:44:15,728 - services.google_sheets_automation_unofficial_only - INFO -    Γ£à Row 7: Message sent successfully
+2026-03-12 17:44:16,478 - services.google_sheets_automation_unofficial_only - INFO -    Row 8: Inspecting row data: {'Phone': '8767647149', 'Name': 'om', 'Send_time': '17:48:00 PM', 'Message': 'Hello Om', 'Status': 'Send'}
+2026-03-12 17:44:16,478 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒÄ» Row 8: Status 'Send' matches trigger value
+2026-03-12 17:44:16,478 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒô¥ Using message from column 'Message': 'Hello Om...'
+2026-03-12 17:44:16,478 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒô¥ Updated row 8 status to 'Processing' in column 'Status'
+2026-03-12 17:44:16,478 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒôñ Sending WhatsApp message for row 8
+2026-03-12 17:44:16,478 - services.google_sheets_automation_unofficial_only - INFO -    Phone: +918767647149
+2026-03-12 17:44:16,478 - services.google_sheets_automation_unofficial_only - INFO -    Device: d8c64c0c-f012-4047-8f14-e91f9f709154
+2026-03-12 17:44:16,478 - services.google_sheets_automation_unofficial_only - INFO -    Message: Hello Om...
+2026-03-12 17:44:16,478 - services.unified_whatsapp_sender - INFO - ≡ƒÜÇ UNIFIED SEND: Starting message delivery
+2026-03-12 17:44:16,478 - services.unified_whatsapp_sender - INFO -    Device ID: d8c64c0c-f012-4047-8f14-e91f9f709154
+2026-03-12 17:44:16,478 - services.unified_whatsapp_sender - INFO -    Raw Phone: +918767647149
+2026-03-12 17:44:16,478 - services.unified_whatsapp_sender - WARNING - [PHONE VALIDATION] Final sending JID: 918767647149@s.whatsapp.net
+2026-03-12 17:44:16,478 - services.unified_whatsapp_sender - INFO -    Normalized Phone: 918767647149
+2026-03-12 17:44:16,479 - services.unified_whatsapp_sender - INFO -    JID: 918767647149@s.whatsapp.net
+2026-03-12 17:44:17,482 - services.google_sheets_automation_unofficial_only - INFO -    ≡ƒô¥ Updated row 8 status to 'Sent' in column 'Status'
+2026-03-12 17:44:18,238 - services.google_sheets_automation_unofficial_only - ERROR -    Failed to save trigger history: (psycopg2.errors.UndefinedColumn) column "device_id" of relation "sheet_trigger_history" does not exist
+LINE 1: ... sheet_trigger_history (id, sheet_id, trigger_id, device_id,...
+                                                             ^
+
+[SQL: INSERT INTO sheet_trigger_history (id, sheet_id, trigger_id, device_id, phone_number, message_content, status, error_message, triggered_at, row_data) VALUES (%(id)s::UUID, %(sheet_id)s::UUID, %(trigger_id)s, %(device_id)s::UUID, %(phone_number)s, %(message_content)s, %(status)s, %(error_message)s, %(triggered_at)s, %(row_data)s::JSON)]
+[parameters: {'id': UUID('7f856f1b-a079-499d-a7d0-a601b8279983'), 'sheet_id': UUID('f33f2f7a-07ac-4aa5-9a1f-504055ea77c0'), 'trigger_id': '1307b3d8-1361-495a-aff2-dbaa90288de1', 'device_id': UUID('d8c64c0c-f012-4047-8f14-e91f9f709154'), 'phone_number': '+918767647149', 'message_content': 'Hello Om', 'status': 'sent', 'error_message': None, 'triggered_at': datetime.datetime(2026, 3, 12, 17, 44, 17, 734500), 'row_data': '{"row_number": 8, "trigger_id": "1307b3d8-1361-495a-aff2-dbaa90288de1", "message_id": "pending_1773317657481_xazos2qps"}'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-03-12 17:44:18,238 - services.google_sheets_automation_unofficial_only - INFO -    Γ£à Row 8: Message sent successfully
+2026-03-12 17:44:19,504 - services.google_sheets_automation_unofficial_only - INFO -    Γ£à Trigger 1307b3d8-1361-495a-aff2-dbaa90288de1 processed 7 rows
+2026-03-12 17:44:20,256 - services.google_sheets_automation_unofficial_only - INFO - Γ£à Completed processing triggers for sheet Sheet1
+2026-03-12 17:44:20,256 - services.google_sheets_automation_unofficial_only - INFO - Γ£à Completed processing all active sheets
+
+--- TEST FINISHED ---

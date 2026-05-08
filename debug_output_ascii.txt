@@ -1,0 +1,189 @@
+--- DEBUGGING GOOGLE SHEET TRIGGERS ---
+
+Sheets Found: 2
+Sheet ID: 681c4989-367e-4dc6-ace6-ea833a6fbe8e | Name: Sheet1 | Device ID: None
+Sheet ID: f33f2f7a-07ac-4aa5-9a1f-504055ea77c0 | Name: Sheet1 | Device ID: fd0cb5b2-3f42-4355-a828-9bc84187efba
+
+Triggers Found: 25
+Trigger fba2329f-16ae-422c-8b66-b9e217653666:
+  Sheet: 681c4989-367e-4dc6-ace6-ea833a6fbe8e
+  Trigger Device ID: ee68cf44-168c-42b0-bf69-bff71cc7110b
+  Sheet Device ID:   None
+  Type: new_row | Enabled: False
+  Wait until column: None
+  Phone column: Phone | Status column: Name | Trigger value: Send
+Trigger 73f2c0b0-6a50-434f-9b26-32b41f9a1ba4:
+  Sheet: 681c4989-367e-4dc6-ace6-ea833a6fbe8e
+  Trigger Device ID: ee68cf44-168c-42b0-bf69-bff71cc7110b
+  Sheet Device ID:   None
+  Type: new_row | Enabled: False
+  Wait until column: None
+  Phone column: Phone | Status column: Name | Trigger value: Send
+Trigger manual_test_1773226971:
+  Sheet: f33f2f7a-07ac-4aa5-9a1f-504055ea77c0
+  Trigger Device ID: 72d3ade7-2aa1-409a-9a2d-12acc0ce2c4c
+  Sheet Device ID:   fd0cb5b2-3f42-4355-a828-9bc84187efba
+  Type: time | Enabled: False
+  Wait until column: Send_time
+  Phone column: phone | Status column: Status | Trigger value: Send
+Trigger 23c1d5f8-246c-4f72-b1b2-5c19feee41c2:
+  Sheet: 681c4989-367e-4dc6-ace6-ea833a6fbe8e
+  Trigger Device ID: ee68cf44-168c-42b0-bf69-bff71cc7110b
+  Sheet Device ID:   None
+  Type: new_row | Enabled: False
+  Wait until column: None
+  Phone column: Phone | Status column: Name | Trigger value: Send
+Trigger 4da506e8-f56c-498c-9ff1-7b084da0296c:
+  Sheet: f33f2f7a-07ac-4aa5-9a1f-504055ea77c0
+  Trigger Device ID: 72d3ade7-2aa1-409a-9a2d-12acc0ce2c4c
+  Sheet Device ID:   fd0cb5b2-3f42-4355-a828-9bc84187efba
+  Type: update_row | Enabled: False
+  Wait until column: None
+  Phone column: Phone | Status column: Status | Trigger value: Send
+Trigger c28cc0dc-611b-40ec-b0bf-e49141b66320:
+  Sheet: 681c4989-367e-4dc6-ace6-ea833a6fbe8e
+  Trigger Device ID: 72d3ade7-2aa1-409a-9a2d-12acc0ce2c4c
+  Sheet Device ID:   None
+  Type: new_row | Enabled: False
+  Wait until column: None
+  Phone column: Phone | Status column: Name | Trigger value: Send
+Trigger 7c20fc6d-60eb-46ca-a645-460384edd6e9:
+  Sheet: 681c4989-367e-4dc6-ace6-ea833a6fbe8e
+  Trigger Device ID: 72d3ade7-2aa1-409a-9a2d-12acc0ce2c4c
+  Sheet Device ID:   None
+  Type: new_row | Enabled: False
+  Wait until column: None
+  Phone column: Phone | Status column: Name | Trigger value: Send
+Trigger 878dcda0-280d-4604-83db-5c732db9b391:
+  Sheet: 681c4989-367e-4dc6-ace6-ea833a6fbe8e
+  Trigger Device ID: ee68cf44-168c-42b0-bf69-bff71cc7110b
+  Sheet Device ID:   None
+  Type: new_row | Enabled: False
+  Wait until column: None
+  Phone column: Phone | Status column: Name | Trigger value: Send
+Trigger 4cf58baa-efae-425e-a5c7-71d76dcf8a99:
+  Sheet: 681c4989-367e-4dc6-ace6-ea833a6fbe8e
+  Trigger Device ID: ee68cf44-168c-42b0-bf69-bff71cc7110b
+  Sheet Device ID:   None
+  Type: new_row | Enabled: False
+  Wait until column: None
+  Phone column: Phone | Status column: Name | Trigger value: Send
+Trigger bbb69c7b-0460-4ab7-85bb-e76a6a31e6ff:
+  Sheet: f33f2f7a-07ac-4aa5-9a1f-504055ea77c0
+  Trigger Device ID: 72d3ade7-2aa1-409a-9a2d-12acc0ce2c4c
+  Sheet Device ID:   fd0cb5b2-3f42-4355-a828-9bc84187efba
+  Type: update_row | Enabled: False
+  Wait until column: None
+  Phone column: Phone | Status column: Status | Trigger value: Send
+Trigger 693dccce-3ceb-4f20-8867-8958e52dc658:
+  Sheet: f33f2f7a-07ac-4aa5-9a1f-504055ea77c0
+  Trigger Device ID: 72d3ade7-2aa1-409a-9a2d-12acc0ce2c4c
+  Sheet Device ID:   fd0cb5b2-3f42-4355-a828-9bc84187efba
+  Type: update_row | Enabled: False
+  Wait until column: None
+  Phone column: Phone | Status column: Status | Trigger value: Send
+Trigger 43f9ddb7-5153-4a94-a775-4db78fb308e9:
+  Sheet: f33f2f7a-07ac-4aa5-9a1f-504055ea77c0
+  Trigger Device ID: 72d3ade7-2aa1-409a-9a2d-12acc0ce2c4c
+  Sheet Device ID:   fd0cb5b2-3f42-4355-a828-9bc84187efba
+  Type: update_row | Enabled: False
+  Wait until column: None
+  Phone column: Phone | Status column: Status | Trigger value: Send
+Trigger 2d2c99a0-925f-457e-8456-5f3f58bddf2f:
+  Sheet: f33f2f7a-07ac-4aa5-9a1f-504055ea77c0
+  Trigger Device ID: 72d3ade7-2aa1-409a-9a2d-12acc0ce2c4c
+  Sheet Device ID:   fd0cb5b2-3f42-4355-a828-9bc84187efba
+  Type: update_row | Enabled: False
+  Wait until column: None
+  Phone column: Phone | Status column: Status | Trigger value: Send
+Trigger c4c9d5da-baf1-4099-ad03-66c9ca212726:
+  Sheet: 681c4989-367e-4dc6-ace6-ea833a6fbe8e
+  Trigger Device ID: ee68cf44-168c-42b0-bf69-bff71cc7110b
+  Sheet Device ID:   None
+  Type: new_row | Enabled: False
+  Wait until column: None
+  Phone column: Phone | Status column: Name | Trigger value: Send
+Trigger 7c4560a9-e306-49c5-8b2f-0fc81f9dab3e:
+  Sheet: 681c4989-367e-4dc6-ace6-ea833a6fbe8e
+  Trigger Device ID: ee68cf44-168c-42b0-bf69-bff71cc7110b
+  Sheet Device ID:   None
+  Type: new_row | Enabled: False
+  Wait until column: None
+  Phone column: Phone | Status column: Name | Trigger value: Send
+Trigger dfacb0ee-923c-4923-a9fe-77fe4e26f42b:
+  Sheet: 681c4989-367e-4dc6-ace6-ea833a6fbe8e
+  Trigger Device ID: ee68cf44-168c-42b0-bf69-bff71cc7110b
+  Sheet Device ID:   None
+  Type: new_row | Enabled: False
+  Wait until column: None
+  Phone column: Phone | Status column: Name | Trigger value: Send
+Trigger d47abf0d-3114-4f2f-8795-563f3e74e8d7:
+  Sheet: 681c4989-367e-4dc6-ace6-ea833a6fbe8e
+  Trigger Device ID: ee68cf44-168c-42b0-bf69-bff71cc7110b
+  Sheet Device ID:   None
+  Type: new_row | Enabled: False
+  Wait until column: None
+  Phone column: Phone | Status column: Name | Trigger value: Send
+Trigger 1a4b5a37-dbe6-403a-8d8c-c7a4fb54b006:
+  Sheet: 681c4989-367e-4dc6-ace6-ea833a6fbe8e
+  Trigger Device ID: ee68cf44-168c-42b0-bf69-bff71cc7110b
+  Sheet Device ID:   None
+  Type: new_row | Enabled: False
+  Wait until column: None
+  Phone column: Phone | Status column: Send_Time | Trigger value: Send
+Trigger 9607d4aa-25be-4ff5-ad3a-be89050a6da9:
+  Sheet: 681c4989-367e-4dc6-ace6-ea833a6fbe8e
+  Trigger Device ID: ee68cf44-168c-42b0-bf69-bff71cc7110b
+  Sheet Device ID:   None
+  Type: new_row | Enabled: False
+  Wait until column: None
+  Phone column: Phone | Status column: Name | Trigger value: Send
+Trigger ef8f9418-0fe3-43b2-92bc-880e91c17f49:
+  Sheet: 681c4989-367e-4dc6-ace6-ea833a6fbe8e
+  Trigger Device ID: ee68cf44-168c-42b0-bf69-bff71cc7110b
+  Sheet Device ID:   None
+  Type: new_row | Enabled: False
+  Wait until column: None
+  Phone column: Phone | Status column: Name | Trigger value: Send
+Trigger b9bfd8aa-f141-401c-bc12-11bcaa49a25c:
+  Sheet: f33f2f7a-07ac-4aa5-9a1f-504055ea77c0
+  Trigger Device ID: 72d3ade7-2aa1-409a-9a2d-12acc0ce2c4c
+  Sheet Device ID:   fd0cb5b2-3f42-4355-a828-9bc84187efba
+  Type: time | Enabled: False
+  Wait until column: Send Time
+  Phone column: Phone | Status column: Status | Trigger value: Pending
+Trigger 2aceb150-c28f-4501-b69f-5541f7fa231b:
+  Sheet: f33f2f7a-07ac-4aa5-9a1f-504055ea77c0
+  Trigger Device ID: None
+  Sheet Device ID:   fd0cb5b2-3f42-4355-a828-9bc84187efba
+  Type: update_row | Enabled: False
+  Wait until column: None
+  Phone column: Phone | Status column: Status | Trigger value: Send
+Trigger 1307b3d8-1361-495a-aff2-dbaa90288de1:
+  Sheet: f33f2f7a-07ac-4aa5-9a1f-504055ea77c0
+  Trigger Device ID: None
+  Sheet Device ID:   fd0cb5b2-3f42-4355-a828-9bc84187efba
+  Type: update_row | Enabled: True
+  Wait until column: None
+  Phone column: Phone | Status column: Status | Trigger value: Send
+Trigger b900ebce-2f4a-4a70-969c-0e378d0aec32:
+  Sheet: f33f2f7a-07ac-4aa5-9a1f-504055ea77c0
+  Trigger Device ID: None
+  Sheet Device ID:   fd0cb5b2-3f42-4355-a828-9bc84187efba
+  Type: update_row | Enabled: False
+  Wait until column: None
+  Phone column: Phone | Status column: Status | Trigger value: Send
+Trigger 3f2bb0f1-ea44-4861-85e0-9f4de8733a4c:
+  Sheet: 681c4989-367e-4dc6-ace6-ea833a6fbe8e
+  Trigger Device ID: ee68cf44-168c-42b0-bf69-bff71cc7110b
+  Sheet Device ID:   None
+  Type: new_row | Enabled: False
+  Wait until column: None
+  Phone column: Phone | Status column: Name | Trigger value: Send
+
+Active Devices Found: 5
+Device ID: d8c64c0c-f012-4047-8f14-e91f9f709154 | Name: omlunget
+Device ID: 122e7fd4-3c1b-4564-98a8-61f852ae3e09 | Name: Official WhatsApp Cloud
+Device ID: e813a7bf-1feb-49b1-af73-0422d6b45c4c | Name: Official WhatsApp Cloud
+Device ID: 02fa5516-83b3-4851-9c35-daadeb908651 | Name: WhatsAppAPI
+Device ID: 3681e154-9992-4305-8975-c2be483ed7b8 | Name: unofficial_device_vikas 

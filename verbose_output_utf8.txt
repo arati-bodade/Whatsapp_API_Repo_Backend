@@ -1,0 +1,28 @@
+﻿--- STARTING TEST ---
+Configuring mappers...
+Mappers configured successfully
+2026-03-12 17:33:56,740 - services.google_sheets_service - INFO - Service Account JSON found at: E:\whatsapp_platform_api\wh-api-backend-vikas\credentials\google-service-account.json
+≡ƒÜÇ STARTING TRIGGER SCAN...
+2026-03-12 17:33:56,740 - services.google_sheets_automation_unofficial_only - WARNING - ΓÜá∩╕Å  LEGACY METHOD CALLED: process_all_active_triggers() - This should only be called via on-demand API
+2026-03-12 17:34:01,485 - services.google_sheets_automation_unofficial_only - INFO - ≡ƒÜÇ Processing triggers for 2 active sheets
+2026-03-12 17:34:01,551 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-03-12 17:34:01,593 - services.google_sheets_service - INFO - Fetching data from spreadsheet 1eF28T3dsJ78IaDSVQI0T3wvCD9lQBkqHhzjgYE1mEjw, range: Sheet1!A:Z
+2026-03-12 17:34:02,810 - services.google_sheets_service - INFO - Successfully fetched 7 rows with 5 columns from 1eF28T3dsJ78IaDSVQI0T3wvCD9lQBkqHhzjgYE1mEjw
+2026-03-12 17:34:02,811 - services.google_sheets_automation_unofficial_only - INFO - ≡ƒôï Processing triggers for sheet Sheet1 (681c4989-367e-4dc6-ace6-ea833a6fbe8e)
+2026-03-12 17:34:02,811 - services.google_sheets_automation_unofficial_only - INFO -    Sheet has 7 rows and 5 columns
+2026-03-12 17:34:03,071 - services.google_sheets_automation_unofficial_only - INFO -    No enabled triggers found for sheet Sheet1
+2026-03-12 17:34:03,118 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-03-12 17:34:03,121 - services.google_sheets_service - INFO - Fetching data from spreadsheet 1eF28T3dsJ78IaDSVQI0T3wvCD9lQBkqHhzjgYE1mEjw, range: Sheet1!A:Z
+2026-03-12 17:34:04,155 - services.google_sheets_service - INFO - Successfully fetched 7 rows with 5 columns from 1eF28T3dsJ78IaDSVQI0T3wvCD9lQBkqHhzjgYE1mEjw
+2026-03-12 17:34:04,157 - services.google_sheets_automation_unofficial_only - INFO - ≡ƒôï Processing triggers for sheet Sheet1 (f33f2f7a-07ac-4aa5-9a1f-504055ea77c0)
+2026-03-12 17:34:04,157 - services.google_sheets_automation_unofficial_only - INFO -    Sheet has 7 rows and 5 columns
+2026-03-12 17:34:04,448 - services.google_sheets_automation_unofficial_only - INFO -    Found 1 enabled triggers
+2026-03-12 17:34:04,448 - services.google_sheets_automation_unofficial_only - INFO - ≡ƒÄ» Processing trigger 1307b3d8-1361-495a-aff2-dbaa90288de1
+2026-03-12 17:34:04,448 - services.google_sheets_automation_unofficial_only - INFO -    Using Device ID: fd0cb5b2-3f42-4355-a828-9bc84187efba (Trigger: None, Sheet: fd0cb5b2-3f42-4355-a828-9bc84187efba)
+2026-03-12 17:34:04,448 - services.google_sheets_automation_unofficial_only - INFO -    Phone Column: Phone
+2026-03-12 17:34:04,448 - services.google_sheets_automation_unofficial_only - INFO -    Status Column: Status
+2026-03-12 17:34:04,449 - services.google_sheets_automation_unofficial_only - INFO -    Trigger Value: Send
+2026-03-12 17:34:05,035 - services.google_sheets_automation_unofficial_only - ERROR -    Γ¥î Trigger 1307b3d8-1361-495a-aff2-dbaa90288de1: Device fd0cb5b2-3f42-4355-a828-9bc84187efba not found in WhatsApp Engine (404)
+2026-03-12 17:34:05,036 - services.google_sheets_automation_unofficial_only - INFO - Γ£à Completed processing triggers for sheet Sheet1
+2026-03-12 17:34:05,036 - services.google_sheets_automation_unofficial_only - INFO - Γ£à Completed processing all active sheets
+--- ENDING TEST ---

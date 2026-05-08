@@ -1,0 +1,23 @@
+﻿
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : {"openapi":"3.1.0","info":{"title":"WhatsApp Platform API","description":"Backend API for WhatsApp 
+                    Platform","version":"1.0.0"},"paths":{"/api/resellers/register":{"post":{"tags":["Resellers"],"summar...
+RawContent        : HTTP/1.1 200 OK
+                    Content-Length: 202840
+                    Content-Type: application/json
+                    Date: Thu, 12 Mar 2026 06:39:06 GMT
+                    Server: uvicorn
+                    
+                    {"openapi":"3.1.0","info":{"title":"WhatsApp Platform API","description...
+Forms             : 
+Headers           : {[Content-Length, 202840], [Content-Type, application/json], [Date, Thu, 12 Mar 2026 06:39:06 GMT], [Server, uvicorn]}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : 
+RawContentLength  : 202840
+
+
+

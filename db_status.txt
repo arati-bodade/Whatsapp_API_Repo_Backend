@@ -1,0 +1,59 @@
+Total devices: 57
+--------------------------------------------------------------------------------
+ID: 184697c9-0d67-4335-a53c-9629123606ee | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: srushti12 | Type: web | Status: expired | Active: False
+ID: bbe66735-6003-4b44-8eb6-f68047379ac5 | User: 6692c12b-405d-4e34-8e77-08a956a0885e | Name: Jaycall_2026 | Type: web | Status: expired | Active: False
+ID: 0c7146b0-7a86-4833-a3c5-e953195102f2 | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: arati | Type: web | Status: expired | Active: False
+ID: 2869c645-59e1-4939-9fb2-0f4d41e536d5 | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: Testing_2026 | Type: web | Status: expired | Active: False
+ID: 19ab8a1c-b625-4305-9655-fc37ac03943b | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: ohnh78 | Type: web | Status: expired | Active: False
+ID: 1ea93833-2c77-4799-abf1-0f1aa64bb557 | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: vikash | Type: web | Status: expired | Active: False
+ID: 02a1bdff-a2b3-4dcd-9f95-a85133824f12 | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: omrsl123 | Type: web | Status: expired | Active: False
+ID: fd0cb5b2-3f42-4355-a828-9bc84187efba | User: a4ea62f8-b476-4c80-810b-f8f681029944 | Name: om Lunge | Type: web | Status: disconnected | Active: False
+ID: 21c7b381-2b77-455c-994f-01925d281986 | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: testecvbh | Type: web | Status: expired | Active: False
+ID: 1a89c77c-3b93-439d-9ba4-6210691717eb | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: what12 | Type: web | Status: logged_out | Active: False
+ID: 6c0d926c-38aa-4efc-ab78-964345756b8a | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: Official WhatsApp Cloud | Type: official | Status: connected | Active: True
+ID: e813a7bf-1feb-49b1-af73-0422d6b45c4c | User: a4ea62f8-b476-4c80-810b-f8f681029944 | Name: Official WhatsApp Cloud | Type: official | Status: disconnected | Active: True
+ID: d8c64c0c-f012-4047-8f14-e91f9f709154 | User: a4ea62f8-b476-4c80-810b-f8f681029944 | Name: omlunget | Type: web | Status: disconnected | Active: True
+ID: 4cdc871b-7b00-4d37-a8db-716f2cefac6c | User: f017b7ed-cf4a-40b3-88ae-682a3b23d541 | Name: vikas  | Type: web | Status: connected | Active: True
+ID: 4b7cb7f4-a827-4cd0-9732-f95728a7245c | User: a4ea62f8-b476-4c80-810b-f8f681029944 | Name: Himashu_test | Type: web | Status: disconnected | Active: False
+ID: c91367e1-7aad-4a56-86ec-9320ed8e1d72 | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: whatsapp_test | Type: web | Status: expired | Active: False
+ID: 0505a868-f00a-44fb-a3e1-2470f2d40192 | User: a4ea62f8-b476-4c80-810b-f8f681029944 | Name: Test Device | Type: web | Status: disconnected | Active: False
+ID: 704361ab-b1d3-4b11-9b5a-d280ee2607fb | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: omrlse | Type: web | Status: expired | Active: False
+ID: 2413c766-a04a-4748-b6d5-aa1e8afb296e | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: om_test | Type: web | Status: expired | Active: False
+ID: 32702723-e9c3-4211-b2a7-376ad32219be | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: kjbhhv | Type: web | Status: expired | Active: False
+ID: 34833da6-1b0d-40a9-b1d3-fea0d84f4881 | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: sddd | Type: web | Status: expired | Active: False
+ID: 35e82c65-730a-4c5b-b257-da0476b84dec | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: Omtest12334 | Type: web | Status: expired | Active: False
+ID: c1161934-47ff-4684-86bd-e806e28676c1 | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: Omrsl12 | Type: web | Status: expired | Active: False
+ID: feda43a0-62a8-49ce-b4dd-77c572d047c2 | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: omlj | Type: web | Status: expired | Active: False
+ID: 52a0fc43-09fe-4847-8086-5b01d1c025de | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: whatspp3wedfcvb | Type: web | Status: connected | Active: True
+ID: 86c21955-baa5-47ac-ab41-ceb3165d1bd1 | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: omrsl12 | Type: web | Status: expired | Active: False
+ID: 1da1b7e7-e66f-42f6-895b-37346e157cc8 | User: 6692c12b-405d-4e34-8e77-08a956a0885e | Name: Official WhatsApp Cloud | Type: official | Status: expired | Active: True
+ID: 55dd7c94-61f2-4b39-9e94-ddab48615781 | User: 6692c12b-405d-4e34-8e77-08a956a0885e | Name: Jaycall_tesing | Type: web | Status: expired | Active: False
+ID: ceeb08ce-5d8d-4a1a-8407-581ebbfb11fc | User: d352c15c-4793-4760-b96c-34961f2a0f4b | Name: vikas test device  | Type: web | Status: expired | Active: False
+ID: 1ef38f90-2456-4d1f-b489-76fd59587a85 | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: whatsapp1_testest | Type: web | Status: expired | Active: False
+ID: 9b8c2c69-5142-4df5-a4fa-db865e7b37d6 | User: d352c15c-4793-4760-b96c-34961f2a0f4b | Name: vikas testing devivce  | Type: web | Status: connected | Active: True
+ID: f6289315-e276-43ca-bff2-208b22e2a1d3 | User: d352c15c-4793-4760-b96c-34961f2a0f4b | Name: vikas whatsapp web login  | Type: web | Status: expired | Active: False
+ID: df2729b8-0d16-4118-a8cb-2211f7aa5cab | User: 6692c12b-405d-4e34-8e77-08a956a0885e | Name: Jaycall | Type: web | Status: connected | Active: True
+ID: 735f2ab7-f59a-4273-8ee3-69b90031a1a2 | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: omlu | Type: web | Status: expired | Active: False
+ID: 8ff86a91-96e2-4070-a9cb-5a0a7d7a657d | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: omtest | Type: web | Status: expired | Active: False
+ID: 9802ec5f-d479-4bc6-a374-15c03b66cccf | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: ondc | Type: web | Status: expired | Active: False
+ID: 9fe0d51f-f9cb-4f87-8a25-0bef7b3f5c1f | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: oiuygf | Type: web | Status: expired | Active: False
+ID: b3c1d1c6-caf3-4470-9cb4-9c96d0960198 | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: omhjj | Type: web | Status: expired | Active: False
+ID: cdf7bb7a-e511-4e28-a856-c71b51f603e5 | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: Omtest | Type: web | Status: expired | Active: False
+ID: d754809a-5a09-4852-bd49-a1083f5fe81b | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: omlunge | Type: web | Status: expired | Active: False
+ID: db1a9b83-b8e6-40b5-a9b8-494ea0062c69 | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: ijkvsjc | Type: web | Status: expired | Active: False
+ID: f3a906ff-1f3f-4bd2-9382-6c2bcc8f1c8d | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: Srushti123 | Type: web | Status: expired | Active: False
+ID: f84d3c80-835a-4a6f-9a88-9ab899c5a9f3 | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: nhgyt | Type: web | Status: expired | Active: False
+ID: 5a1e4ccd-fc86-42f0-9ea5-0278e17af3d7 | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: omrsl | Type: web | Status: expired | Active: False
+ID: 8c43198c-f6ef-4328-8d40-ea9f36de3c9a | User: e9cdc64e-4d6e-4b35-849f-f7206954c86f | Name: whatsapp | Type: web | Status: connected | Active: True
+ID: f15f4d1e-8aef-4e86-84e8-bb8af3748555 | User: d352c15c-4793-4760-b96c-34961f2a0f4b | Name: Official WhatsApp Cloud | Type: official | Status: disconnected | Active: True
+ID: fc7776cc-8f02-4c8b-b4ea-c2dfc2f2c86f | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: dgc | Type: web | Status: expired | Active: False
+ID: 0fce80c8-1c1a-4881-a08c-69be272ede1a | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: omrsl1234 | Type: web | Status: expired | Active: False
+ID: 0914b6d6-c356-4c85-9752-a569e8e999cc | User: d352c15c-4793-4760-b96c-34961f2a0f4b | Name: test2 | Type: web | Status: expired | Active: False
+ID: 0d8f7e01-f44b-4094-b509-cf175ab27bc8 | User: d352c15c-4793-4760-b96c-34961f2a0f4b | Name: viiiii | Type: web | Status: expired | Active: False
+ID: 265ceec1-5837-492e-9706-6c73a54c878c | User: d352c15c-4793-4760-b96c-34961f2a0f4b | Name: jaypal whatsapp device  | Type: web | Status: expired | Active: False
+ID: 28e7d9bd-08b0-44a5-b7e5-0aff48b32ba6 | User: d352c15c-4793-4760-b96c-34961f2a0f4b | Name: vikas kambale unofficial device | Type: web | Status: expired | Active: False
+ID: 3681e154-9992-4305-8975-c2be483ed7b8 | User: d352c15c-4793-4760-b96c-34961f2a0f4b | Name: unofficial_device_vikas  | Type: web | Status: expired | Active: False
+ID: 7aa59819-3690-4498-b0e2-b99a99ecf1b2 | User: d352c15c-4793-4760-b96c-34961f2a0f4b | Name: vikas whatsapp login  | Type: web | Status: expired | Active: False
+ID: 7ad64b83-affe-410d-a2fe-8000ef04c39b | User: d352c15c-4793-4760-b96c-34961f2a0f4b | Name: vikas testing device  | Type: web | Status: expired | Active: False
+ID: 8b9c303b-66b7-40e6-b54c-8be72a6b66dd | User: d352c15c-4793-4760-b96c-34961f2a0f4b | Name: vikas test_device | Type: web | Status: expired | Active: False
+ID: 63c88a69-3af5-4dcc-a39b-a32824b9db18 | User: d0d7b024-8570-44c9-ac62-61d3a8b392de | Name: whatspp123 | Type: web | Status: logged_out | Active: False

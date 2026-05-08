@@ -1,0 +1,58 @@
+﻿--- STARTING VERBOSE TEST ---
+Found 2 total sheets in DB.
+Sheet: Sheet1 (ID: 681c4989-367e-4dc6-ace6-ea833a6fbe8e) | Status: SheetStatus.ACTIVE
+  -> Has 15 triggers.
+     - Trigger fba2329f-16ae-422c-8b66-b9e217653666: Type=new_row, Enabled=False, Device=ee68cf44-168c-42b0-bf69-bff71cc7110b
+     - Trigger 73f2c0b0-6a50-434f-9b26-32b41f9a1ba4: Type=new_row, Enabled=False, Device=ee68cf44-168c-42b0-bf69-bff71cc7110b
+     - Trigger 23c1d5f8-246c-4f72-b1b2-5c19feee41c2: Type=new_row, Enabled=False, Device=ee68cf44-168c-42b0-bf69-bff71cc7110b
+     - Trigger c28cc0dc-611b-40ec-b0bf-e49141b66320: Type=new_row, Enabled=False, Device=72d3ade7-2aa1-409a-9a2d-12acc0ce2c4c
+     - Trigger 7c20fc6d-60eb-46ca-a645-460384edd6e9: Type=new_row, Enabled=False, Device=72d3ade7-2aa1-409a-9a2d-12acc0ce2c4c
+     - Trigger 878dcda0-280d-4604-83db-5c732db9b391: Type=new_row, Enabled=False, Device=ee68cf44-168c-42b0-bf69-bff71cc7110b
+     - Trigger 4cf58baa-efae-425e-a5c7-71d76dcf8a99: Type=new_row, Enabled=False, Device=ee68cf44-168c-42b0-bf69-bff71cc7110b
+     - Trigger c4c9d5da-baf1-4099-ad03-66c9ca212726: Type=new_row, Enabled=False, Device=ee68cf44-168c-42b0-bf69-bff71cc7110b
+     - Trigger 7c4560a9-e306-49c5-8b2f-0fc81f9dab3e: Type=new_row, Enabled=False, Device=ee68cf44-168c-42b0-bf69-bff71cc7110b
+     - Trigger dfacb0ee-923c-4923-a9fe-77fe4e26f42b: Type=new_row, Enabled=False, Device=ee68cf44-168c-42b0-bf69-bff71cc7110b
+     - Trigger d47abf0d-3114-4f2f-8795-563f3e74e8d7: Type=new_row, Enabled=False, Device=ee68cf44-168c-42b0-bf69-bff71cc7110b
+     - Trigger 1a4b5a37-dbe6-403a-8d8c-c7a4fb54b006: Type=new_row, Enabled=False, Device=ee68cf44-168c-42b0-bf69-bff71cc7110b
+     - Trigger 9607d4aa-25be-4ff5-ad3a-be89050a6da9: Type=new_row, Enabled=False, Device=ee68cf44-168c-42b0-bf69-bff71cc7110b
+     - Trigger ef8f9418-0fe3-43b2-92bc-880e91c17f49: Type=new_row, Enabled=False, Device=ee68cf44-168c-42b0-bf69-bff71cc7110b
+     - Trigger 3f2bb0f1-ea44-4861-85e0-9f4de8733a4c: Type=new_row, Enabled=False, Device=ee68cf44-168c-42b0-bf69-bff71cc7110b
+Sheet: Sheet1 (ID: f33f2f7a-07ac-4aa5-9a1f-504055ea77c0) | Status: SheetStatus.ACTIVE
+  -> Has 10 triggers.
+     - Trigger manual_test_1773226971: Type=time, Enabled=False, Device=72d3ade7-2aa1-409a-9a2d-12acc0ce2c4c
+     - Trigger 4da506e8-f56c-498c-9ff1-7b084da0296c: Type=update_row, Enabled=False, Device=72d3ade7-2aa1-409a-9a2d-12acc0ce2c4c
+     - Trigger bbb69c7b-0460-4ab7-85bb-e76a6a31e6ff: Type=update_row, Enabled=False, Device=72d3ade7-2aa1-409a-9a2d-12acc0ce2c4c
+     - Trigger 693dccce-3ceb-4f20-8867-8958e52dc658: Type=update_row, Enabled=False, Device=72d3ade7-2aa1-409a-9a2d-12acc0ce2c4c
+     - Trigger 43f9ddb7-5153-4a94-a775-4db78fb308e9: Type=update_row, Enabled=False, Device=72d3ade7-2aa1-409a-9a2d-12acc0ce2c4c
+     - Trigger 2d2c99a0-925f-457e-8456-5f3f58bddf2f: Type=update_row, Enabled=False, Device=72d3ade7-2aa1-409a-9a2d-12acc0ce2c4c
+     - Trigger b9bfd8aa-f141-401c-bc12-11bcaa49a25c: Type=time, Enabled=False, Device=72d3ade7-2aa1-409a-9a2d-12acc0ce2c4c
+     - Trigger 2aceb150-c28f-4501-b69f-5541f7fa231b: Type=update_row, Enabled=False, Device=None
+     - Trigger 1307b3d8-1361-495a-aff2-dbaa90288de1: Type=update_row, Enabled=True, Device=None
+     - Trigger b900ebce-2f4a-4a70-969c-0e378d0aec32: Type=update_row, Enabled=False, Device=None
+2026-03-12 17:35:50,707 - services.google_sheets_service - INFO - Service Account JSON found at: E:\whatsapp_platform_api\wh-api-backend-vikas\credentials\google-service-account.json
+
+≡ƒÜÇ EXECUTING process_all_active_triggers()...
+2026-03-12 17:35:50,707 - services.google_sheets_automation_unofficial_only - WARNING - ΓÜá∩╕Å  LEGACY METHOD CALLED: process_all_active_triggers() - This should only be called via on-demand API
+2026-03-12 17:35:51,234 - services.google_sheets_automation_unofficial_only - INFO - ≡ƒÜÇ Processing triggers for 2 active sheets
+2026-03-12 17:35:51,285 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-03-12 17:35:51,289 - services.google_sheets_service - INFO - Fetching data from spreadsheet 1eF28T3dsJ78IaDSVQI0T3wvCD9lQBkqHhzjgYE1mEjw, range: Sheet1!A:Z
+2026-03-12 17:35:52,305 - services.google_sheets_service - INFO - Successfully fetched 7 rows with 5 columns from 1eF28T3dsJ78IaDSVQI0T3wvCD9lQBkqHhzjgYE1mEjw
+2026-03-12 17:35:52,306 - services.google_sheets_automation_unofficial_only - INFO - ≡ƒôï Processing triggers for sheet Sheet1 (681c4989-367e-4dc6-ace6-ea833a6fbe8e)
+2026-03-12 17:35:52,307 - services.google_sheets_automation_unofficial_only - INFO -    Sheet has 7 rows and 5 columns
+2026-03-12 17:35:52,595 - services.google_sheets_automation_unofficial_only - INFO -    No enabled triggers found for sheet Sheet1
+2026-03-12 17:35:52,643 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2026-03-12 17:35:52,647 - services.google_sheets_service - INFO - Fetching data from spreadsheet 1eF28T3dsJ78IaDSVQI0T3wvCD9lQBkqHhzjgYE1mEjw, range: Sheet1!A:Z
+2026-03-12 17:35:53,639 - services.google_sheets_service - INFO - Successfully fetched 7 rows with 5 columns from 1eF28T3dsJ78IaDSVQI0T3wvCD9lQBkqHhzjgYE1mEjw
+2026-03-12 17:35:53,640 - services.google_sheets_automation_unofficial_only - INFO - ≡ƒôï Processing triggers for sheet Sheet1 (f33f2f7a-07ac-4aa5-9a1f-504055ea77c0)
+2026-03-12 17:35:53,640 - services.google_sheets_automation_unofficial_only - INFO -    Sheet has 7 rows and 5 columns
+2026-03-12 17:35:53,973 - services.google_sheets_automation_unofficial_only - INFO -    Found 1 enabled triggers
+2026-03-12 17:35:53,974 - services.google_sheets_automation_unofficial_only - INFO - ≡ƒÄ» Processing trigger 1307b3d8-1361-495a-aff2-dbaa90288de1
+2026-03-12 17:35:53,974 - services.google_sheets_automation_unofficial_only - INFO -    Using Device ID: fd0cb5b2-3f42-4355-a828-9bc84187efba (Trigger: None, Sheet: fd0cb5b2-3f42-4355-a828-9bc84187efba)
+2026-03-12 17:35:53,974 - services.google_sheets_automation_unofficial_only - INFO -    Phone Column: Phone
+2026-03-12 17:35:53,974 - services.google_sheets_automation_unofficial_only - INFO -    Status Column: Status
+2026-03-12 17:35:53,974 - services.google_sheets_automation_unofficial_only - INFO -    Trigger Value: Send
+2026-03-12 17:35:54,568 - services.google_sheets_automation_unofficial_only - ERROR -    Γ¥î Trigger 1307b3d8-1361-495a-aff2-dbaa90288de1: Device fd0cb5b2-3f42-4355-a828-9bc84187efba not found in WhatsApp Engine (404)
+2026-03-12 17:35:54,568 - services.google_sheets_automation_unofficial_only - INFO - Γ£à Completed processing triggers for sheet Sheet1
+2026-03-12 17:35:54,568 - services.google_sheets_automation_unofficial_only - INFO - Γ£à Completed processing all active sheets
+
+--- TEST FINISHED ---

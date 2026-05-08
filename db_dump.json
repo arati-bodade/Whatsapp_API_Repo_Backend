@@ -1,0 +1,76 @@
+{
+    "resellers": [
+        {
+            "id": "cfa1dffa-4380-48dd-b433-26736ee0ab3a",
+            "name": "Test Reseller API",
+            "email": "test@api.reseller.com"
+        },
+        {
+            "id": "1de88573-e986-4886-ba1e-34cb769871b5",
+            "name": "Test Plain Reseller",
+            "email": "reseller_plain_696409d2@example.com"
+        },
+        {
+            "id": "98956f27-d3f9-4b41-85ea-3be40201b778",
+            "name": "Rohit Mehta",
+            "email": "rohit.mehta@example.com"
+        },
+        {
+            "id": "eb6c97be-6026-481a-8bbe-0fc13c7bd0e2",
+            "name": "John Reseller",
+            "email": "john_68efb68e@reseller.com"
+        },
+        {
+            "id": "c548309c-d0fe-4e6f-ad63-49ebbd3e6d0c",
+            "name": "Jane Reseller",
+            "email": "jane_1a830f89@reseller.com"
+        },
+        {
+            "id": "df8508b4-76f1-4a88-b3dc-f930355b3bec",
+            "name": "Test Reseller API",
+            "email": "test2@api.reseller.com"
+        },
+        {
+            "id": "bbc54bf4-f35d-420a-8c64-b34b3811ed78",
+            "name": "Test Realtime",
+            "email": "test@realtime.com"
+        },
+        {
+            "id": "bdfea19a-e4ce-4a2a-a27d-50c030b5b6dd",
+            "name": "Riya Patil",
+            "email": "riya.patil.demo@gmail.com"
+        }
+    ],
+    "users": [
+        {
+            "id": "32f49658-dfd7-44b7-a892-e43f5a41e876",
+            "name": "Alice Business",
+            "email": "alice_3f3cf575@business.com",
+            "parent_id": "eb6c97be-6026-481a-8bbe-0fc13c7bd0e2"
+        },
+        {
+            "id": "e1593373-c78e-442f-bd52-34db8a277000",
+            "name": "Bob Business",
+            "email": "bob_18887b0a@business.com",
+            "parent_id": "eb6c97be-6026-481a-8bbe-0fc13c7bd0e2"
+        },
+        {
+            "id": "c797b6ca-6030-443a-a767-ae487576c949",
+            "name": "Charlie Business",
+            "email": "charlie_106c274f@business.com",
+            "parent_id": "c548309c-d0fe-4e6f-ad63-49ebbd3e6d0c"
+        },
+        {
+            "id": "5f115b42-bcd7-4598-abb2-778abc4458c8",
+            "name": "Test Business API",
+            "email": "test@business.api",
+            "parent_id": "df8508b4-76f1-4a88-b3dc-f930355b3bec"
+        },
+        {
+            "id": "1626f7bf-f6a2-4157-b9cc-dbdcb43dfe88",
+            "name": "Test Business",
+            "email": "test@business.com",
+            "parent_id": "bbc54bf4-f35d-420a-8c64-b34b3811ed78"
+        }
+    ]
+}

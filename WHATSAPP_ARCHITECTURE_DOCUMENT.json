@@ -1,0 +1,151 @@
+{
+  "title": "WhatsApp Platform Architecture Document",
+  "generated": "2026-02-12 13:12:20",
+  "overview": {
+    "type": "Three-Service Microservices Architecture",
+    "purpose": "Scalable WhatsApp messaging platform with clear separation of concerns"
+  },
+  "services": {
+    "frontend": {
+      "name": "Frontend Service",
+      "location": "whatsapp_platform_frontend/",
+      "port": 3000,
+      "technology": "Next.js 16.1.1 + TypeScript",
+      "purpose": "User interface and API proxy",
+      "key_features": [
+        "Dashboard with real-time updates",
+        "Manage Replies interface",
+        "Device management",
+        "User authentication",
+        "API request proxying to backend"
+      ],
+      "dependencies": [
+        "React",
+        "Tailwind CSS",
+        "Lucide Icons",
+        "Axios"
+      ]
+    },
+    "backend": {
+      "name": "Backend Service",
+      "location": "whatsapp-api-backend/",
+      "port": 8000,
+      "technology": "Python FastAPI + SQLAlchemy",
+      "purpose": "Business logic and data management",
+      "key_features": [
+        "Webhook processing for incoming messages",
+        "Reply sending with phone validation",
+        "Device session management",
+        "User authentication and authorization",
+        "PostgreSQL database operations",
+        "API documentation with OpenAPI"
+      ],
+      "dependencies": [
+        "FastAPI",
+        "SQLAlchemy",
+        "PostgreSQL",
+        "Alembic",
+        "Pydantic"
+      ]
+    },
+    "whatsapp_engine": {
+      "name": "WhatsApp Engine",
+      "location": "whatsapp-engine-baileys/",
+      "port": 3002,
+      "technology": "Node.js + Baileys Library",
+      "purpose": "Direct WhatsApp integration",
+      "key_features": [
+        "Multi-device session management",
+        "QR code generation for device pairing",
+        "Message sending and receiving",
+        "Auto-reconnection and error recovery",
+        "Session persistence",
+        "Real-time status updates"
+      ],
+      "dependencies": [
+        "Baileys",
+        "Express.js",
+        "File System",
+        "WebSocket"
+      ]
+    }
+  },
+  "data_flow": {
+    "message_reception": {
+      "flow": "WhatsApp User → Engine → Backend → Database → Frontend",
+      "description": "Incoming messages flow through webhook processing"
+    },
+    "reply_sending": {
+      "flow": "Frontend → Backend → Validation → Engine → WhatsApp User",
+      "description": "Reply messages with phone number validation and normalization"
+    }
+  },
+  "recent_improvements": {
+    "webhook_fix": {
+      "issue": "Invalid phone numbers stored from webhook",
+      "solution": "Extract phone from remote_jid instead of phone_number field",
+      "status": "✅ Implemented and tested"
+    },
+    "phone_validation": {
+      "issue": "Messages sent to invalid WhatsApp JIDs",
+      "solution": "Strict MSISDN validation (10-15 digits) before JID construction",
+      "status": "✅ Implemented and tested"
+    },
+    "response_handling": {
+      "issue": "Backend treated only 'delivered' as success",
+      "solution": "Treat 'accepted', 'sent', 'queued' as success",
+      "status": "✅ Implemented and tested"
+    },
+    "jid_construction": {
+      "issue": "JID created with raw phone instead of normalized phone",
+      "solution": "Use normalized_phone for JID construction",
+      "status": "✅ Implemented and tested"
+    },
+    "database_cleanup": {
+      "issue": "Invalid phone records in database",
+      "solution": "Cleaned all invalid records (length > 15 or non-digit)",
+      "status": "✅ Completed - database now 100% valid"
+    }
+  },
+  "architecture_benefits": [
+    "Scalability: Each service can scale independently",
+    "Maintainability: Clear code boundaries and responsibilities",
+    "Reliability: Fault isolation between services",
+    "Technology Flexibility: Best tools for each service's purpose",
+    "Development Efficiency: Teams can work on services independently",
+    "Testing: Comprehensive integration and unit tests",
+    "Monitoring: Health checks and structured logging"
+  ],
+  "deployment": {
+    "development": {
+      "frontend": "npm run dev (Port 3000)",
+      "backend": "uvicorn main:app --host 0.0.0.0 --port 8000",
+      "engine": "node server.js (Port 3002)"
+    },
+    "production": {
+      "recommendation": "Load balancer + multiple instances",
+      "scaling": "Independent horizontal scaling",
+      "monitoring": "Health checks and metrics collection"
+    }
+  },
+  "security": {
+    "authentication": "JWT-based authentication with refresh tokens",
+    "authorization": "Role-based access control",
+    "data_protection": "Encrypted connections, SQL injection protection",
+    "api_security": "CORS configuration, rate limiting",
+    "session_security": "Encrypted session storage, secure QR codes"
+  },
+  "performance": {
+    "optimization_points": [
+      "Frontend: Code splitting, lazy loading, static asset CDN",
+      "Backend: Database indexing, connection pooling, Redis cache",
+      "Engine: Session pooling, message queuing"
+    ],
+    "monitoring": [
+      "Response time tracking",
+      "Error rate monitoring",
+      "Business metrics (delivery rates, user activity)",
+      "System health checks"
+    ]
+  }
+}

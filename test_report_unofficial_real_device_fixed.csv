@@ -1,0 +1,13 @@
+Endpoint,Method,Status,Time(ms),Result,Response
+/send-message,POST,500,8,FAIL,"{""detail"":""'WhatsAppEngineService' object has no attribute 'send_text'""}"
+/send-file,POST,500,29,FAIL,"{""detail"":""'WhatsAppEngineService' object has no attribute 'send_file'""}"
+/send-file-text,POST,500,29,FAIL,"{""detail"":""'WhatsAppEngineService' object has no attribute 'send_file_with_caption'""}"
+/send-base64-file,POST,500,16,FAIL,"{""detail"":""'WhatsAppEngineService' object has no attribute 'send_base64_file'""}"
+/send-file,GET,500,30,FAIL,"{""detail"":""'WhatsAppEngineService' object has no attribute 'send_file'""}"
+/send-file-text,GET,500,14,FAIL,"{""detail"":""'WhatsAppEngineService' object has no attribute 'send_file_with_caption'""}"
+/send-file-caption,GET,500,30,FAIL,"{""detail"":""'WhatsAppEngineService' object has no attribute 'send_file_with_caption'""}"
+/send-message-query,GET,500,15,FAIL,"{""detail"":""'WhatsAppEngineService' object has no attribute 'send_text'""}"
+/send-file-query,GET,500,16,FAIL,"{""detail"":""'WhatsAppEngineService' object has no attribute 'send_file'""}"
+/send-message-file-query,GET,500,15,FAIL,"{""detail"":""'WhatsAppEngineService' object has no attribute 'send_file_with_caption'""}"
+/delivery-report,GET,200,62,PASS,"{""success"":false,""error"":""Failed to check message status: No response""}"
+/status-check,GET,500,15,FAIL,"{""detail"":""'WhatsAppEngineService' object has no attribute 'status_check'""}"

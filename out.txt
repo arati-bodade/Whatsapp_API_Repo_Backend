@@ -1,0 +1,15 @@
+------- RESELLERS -------
+{'email': 'sharad.pawar@example.com', 'reseller_id': '297d7e44-6e90-4891-b46f-74bdf0fa238b', 'phone': '9823456710', 'status': 'active', 'name': 'rohit Pawar', 'total_credits': '1000'}
+{'email': 'akshay.patil@example.com', 'reseller_id': '62a65ac1-5864-469c-bf4e-fb92d5c3b8e4', 'phone': '9876543210', 'status': 'active', 'name': 'Akshay Patil', 'total_credits': '345000'}
+{'email': 'vikaskambale6631@gmail.com', 'reseller_id': 'a6b02694-8e95-4c4e-9fce-841e7eb1b3f0', 'phone': '7887640770', 'status': 'active', 'name': 'Vikas kailas Kamble', 'total_credits': '2000'}
+{'email': 'arati.bodade@gmail.com', 'reseller_id': '5adec0a9-baf8-4b33-998e-eb50fcf4e9da', 'phone': '8378031442', 'status': 'active', 'name': 'Arati Janardan Bodade', 'total_credits': '0'}
+
+------- BUSINESS USERS -------
+{'name': 'Rohit Hol', 'status': 'active', 'parent_reseller_id': 'None', 'email': 'rohit.hol01@gmail.com', 'phone': '7709449470', 'plan_id': 'None', 'business_name': 'Hol Tech Solutions', 'busi_user_id': 'f017b7ed-cf4a-40b3-88ae-682a3b23d541'}
+{'name': 'Jaypal Tupare', 'status': 'active', 'parent_reseller_id': '62a65ac1-5864-469c-bf4e-fb92d5c3b8e4', 'email': 'jaypal.tupare@gmail.com', 'phone': '9145291501', 'plan_id': 'None', 'business_name': 'rslvf', 'busi_user_id': '6692c12b-405d-4e34-8e77-08a956a0885e'}
+{'name': 'Sushil Bodade', 'status': 'active', 'parent_reseller_id': 'None', 'email': 'sushil.bodade@gmail.com', 'phone': '9637250728', 'plan_id': '02813fcf-a314-423b-b114-3c5d3ea690f9', 'business_name': 'Sushil entire', 'busi_user_id': 'e9cdc64e-4d6e-4b35-849f-f7206954c86f'}
+{'name': 'Himanshu Lunge', 'status': 'active', 'parent_reseller_id': '62a65ac1-5864-469c-bf4e-fb92d5c3b8e4', 'email': 'himanshu.lunge@example.com', 'phone': '8767647149', 'plan_id': 'None', 'business_name': 'Lunge Enterprises', 'busi_user_id': 'a4ea62f8-b476-4c80-810b-f8f681029944'}
+{'name': 'Tushar Nimbolkar', 'status': 'active', 'parent_reseller_id': 'None', 'email': 'tushar.nimbolkar@gmail.com', 'phone': '919730413701', 'plan_id': 'None', 'business_name': 'Nimbolkar Retail Store', 'busi_user_id': '30079b48-4697-4cc8-9312-4ab25c331085'}
+{'name': 'Mukund Lunge', 'status': 'active', 'parent_reseller_id': 'None', 'email': 'lungeomkar39@gmail.com', 'phone': '8975463587', 'plan_id': 'None', 'business_name': 'Mukund Enterprises', 'busi_user_id': 'c3bd1a5b-b615-4f5b-8c94-cf002695cc53'}
+{'name': 'Amit Verma', 'status': 'active', 'parent_reseller_id': 'a6b02694-8e95-4c4e-9fce-841e7eb1b3f0', 'email': 'amit.verma@testmail.com', 'phone': '9876543211', 'plan_id': 'None', 'business_name': 'Verma Digital Marketing', 'busi_user_id': 'd352c15c-4793-4760-b96c-34961f2a0f4b'}
+{'name': 'Srushti Lunge', 'status': 'active', 'parent_reseller_id': '62a65ac1-5864-469c-bf4e-fb92d5c3b8e4', 'email': 'srushti.lunge@gmail.com', 'phone': '7517367976', 'plan_id': 'None', 'business_name': 'Srushti Creations', 'busi_user_id': 'd0d7b024-8570-44c9-ac62-61d3a8b392de'}

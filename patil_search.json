@@ -1,0 +1,28 @@
+[
+    {
+        "table": "resellers",
+        "row": {
+            "reseller_id": "bdfea19a-e4ce-4a2a-a27d-50c030b5b6dd",
+            "created_at": "reseller",
+            "updated_at": "active",
+            "total_credits": "2026-01-21 08:07:30.505484+00:00",
+            "available_credits": null,
+            "used_credits": "Riya Patil",
+            "username": "riya_patil",
+            "email": "riya.patil.demo@gmail.com",
+            "phone": "07887640770",
+            "password_hash": "$2b$12$s0sJUQ/srA1AvQZJPm59Y.YCN6pdPXjRlYcPUdbMnpFxchuJL/R/K",
+            "business_name": "Riya Digital Solutions",
+            "business_description": "WhatsApp API, CRM & Marketing Automation",
+            "erp_system": "SAP",
+            "gstin": "97AAPFP4567K1Z2",
+            "full_address": "Flat 402, Sai Residency, Baner, Pune, Maharashtra",
+            "pincode": "411062",
+            "role": "India",
+            "status": "HDFC Bank",
+            "country": 0,
+            "bank_name": 0,
+            "name": 0
+        }
+    }
+]

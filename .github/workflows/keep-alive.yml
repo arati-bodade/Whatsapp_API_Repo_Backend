@@ -1,0 +1,20 @@
+name: Keep Engine Alive
+on:
+  schedule:
+    - cron: '*/10 * * * *'  # Every 10 minutes
+  workflow_dispatch:
+
+jobs:
+  keep-alive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping WhatsApp Engine
+        run: |
+          echo "Pinging WhatsApp Engine to keep it alive..."
+          response=$(curl -s -o /dev/null -w "%{http_code}" https://whatsapp-platform-api-engine.onrender.com/health)
+          echo "Engine response code: $response"
+          if [ "$response" = "200" ] || [ "$response" = "404" ]; then
+            echo "Engine is alive and responding"
+          else
+            echo "Engine might be waking up, response code: $response"
+          fi

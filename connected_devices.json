@@ -1,0 +1,37 @@
+[
+  {
+    "device_name": "jaypal 2",
+    "type": "web",
+    "status": "connected",
+    "device_id": "5b8f3e4b-5696-437b-8601-cf07aacd0635",
+    "last_active": "2026-02-27 12:17:14"
+  },
+  {
+    "device_name": "arati 3",
+    "type": "web",
+    "status": "connected",
+    "device_id": "e5333c4e-bb31-41da-9f5d-21b30fa1cb51",
+    "last_active": "2026-02-27 12:20:00"
+  },
+  {
+    "device_name": "saksham",
+    "type": "web",
+    "status": "connected",
+    "device_id": "2b837c91-1f14-4b13-9f0b-4ee097c12c13",
+    "last_active": "2026-02-27 12:21:48"
+  },
+  {
+    "device_name": "vikas device 1",
+    "type": "web",
+    "status": "connected",
+    "device_id": "08c6dce6-2839-48a1-9db7-0fa7ff2bd356",
+    "last_active": "2026-02-27 11:47:29"
+  },
+  {
+    "device_name": "mandapam",
+    "type": "web",
+    "status": "connected",
+    "device_id": "9e076d79-0a67-4554-9e4a-ab76aea60a85",
+    "last_active": "2026-02-27 12:25:46"
+  }
+]

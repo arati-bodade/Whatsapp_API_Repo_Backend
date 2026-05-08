@@ -1,0 +1,1 @@
+['sheet_id', 'user_id', 'sheet_name', 'spreadsheet_id', 'status', 'rows_count', 'last_synced_at', 'connected_at', 'worksheet_name', 'id']

@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: whatsapp-platform-api-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash start.sh
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: WEB_CONCURRENCY
+        value: 1
+    healthCheckPath: /health
+    autoDeploy: false
+    plan: free
+    region: oregon
+    numInstances: 1

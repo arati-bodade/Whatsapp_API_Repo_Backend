@@ -1,0 +1,1 @@
+['user_id', 'sheet_name', 'spreadsheet_id', 'status', 'total_rows', 'last_synced_at', 'connected_at', 'worksheet_name', 'id', 'trigger_enabled', 'device_id', 'message_template', 'trigger_config', 'created_at', 'updated_at']

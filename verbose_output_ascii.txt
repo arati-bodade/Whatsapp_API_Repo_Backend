@@ -1,0 +1,4 @@
+--- STARTING TEST ---
+Configuring mappers...
+Mappers configured successfully
+2026-03-12 17:33:27,803 - services.google_sheets_service - INFO - Service Account JSON found at: E:\whatsapp_platform_api\wh-api-backend-vikas\credentials\google-service-account.json

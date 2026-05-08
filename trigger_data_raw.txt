@@ -1,0 +1,7 @@
+﻿--- Google Sheet Triggers ---
+Error: (psycopg2.errors.UndefinedColumn) column "execution_time" does not exist
+LINE 1: ...d, sheet_id, device_id, is_enabled, trigger_type, execution_...
+                                                             ^
+
+[SQL: SELECT trigger_id, sheet_id, device_id, is_enabled, trigger_type, execution_time FROM google_sheet_triggers]
+(Background on this error at: https://sqlalche.me/e/20/f405)

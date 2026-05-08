@@ -1,0 +1,7 @@
+{
+  "device_id": "836cbc3f-6668-4fd7-998d-04775eb79b25",
+  "busi_user_id": "761dec6e-f21b-4c28-ba19-001e00355506",
+  "session_status": "disconnected",
+  "is_active": true,
+  "deleted_at": "None"
+}

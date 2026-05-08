@@ -1,0 +1,13 @@
+Endpoint,Method,Status,Time(ms),Result,Response
+POST /send-message,POST,200,825,PASS,"{""success"":true,""message"":""Message sent successfully"",""data"":{""status"":""accepted"",""messageId"":""pending_1772014992223_xefwyfvb3"",""to"":""917537004040@s.whatsapp.net"",""timestamp"":""2026-02-25T10:23:12.223Z"
+POST /send-file,POST,200,760,PASS,"{""success"":false,""message"":""Failed to send file: HTTP No response"",""data"":null}"
+POST /send-file-text,POST,200,752,PASS,"{""success"":false,""message"":""Failed to send file with caption: HTTP No response"",""data"":null}"
+POST /send-base64-file,POST,200,869,PASS,"{""success"":false,""message"":""Failed to send base64 file: HTTP No response"",""data"":null}"
+GET /send-file,GET,200,751,PASS,"{""success"":false,""message"":""Failed to send file: HTTP No response"",""data"":null}"
+GET /send-file-text,GET,200,746,PASS,"{""success"":false,""message"":""Failed to send file with caption: HTTP No response"",""data"":null}"
+GET /send-file-caption,GET,200,741,PASS,"{""success"":false,""message"":""Failed to send file with caption: HTTP No response"",""data"":null}"
+GET /send-message-query,GET,200,741,PASS,"{""success"":true,""message"":""Message sent successfully"",""data"":{""status"":""accepted"",""messageId"":""pending_1772014997588_4vwc8fhw8"",""to"":""917537004040@s.whatsapp.net"",""timestamp"":""2026-02-25T10:23:17.588Z"
+GET /send-file-query,GET,200,780,PASS,"{""success"":false,""message"":""Failed to send file: HTTP No response"",""data"":null}"
+GET /send-message-file-query,GET,200,740,PASS,"{""success"":false,""message"":""Failed to send file with caption: HTTP No response"",""data"":null}"
+GET /delivery-report,GET,200,13,PASS,"{""success"":false,""error"":""Failed to check message status: No response""}"
+GET /status-check,GET,200,740,PASS,"{""success"":true,""message"":""Status retrieved successfully"",""data"":{""status"":""connected"",""has_qr"":false,""reconnects"":0,""created_at"":1772014636898,""connected_at"":1772014638635}}"

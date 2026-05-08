@@ -1,0 +1,58 @@
+=== DEBUG REPORT ===
+
+[Official WhatsApp Configs]
+  - User: b6262357-4700-4305-aadb-87e14418a17f
+    PhoneID: string
+    Active: True
+
+  - User: 6f40955d-e776-4956-a908-f7925f670a74
+    PhoneID: 987654321098765
+    Active: True
+
+  - User: 9b2a1f3c-4d67-4b9e-9f21-1a8c7e3d4f55
+    PhoneID: 444555666777888
+    Active: True
+
+  - User: c31b92d1-ab1b-4862-b8a9-b9f146ad4cfc
+    PhoneID: 987654321098765
+    Active: True
+
+  - User: test-new-user-99999
+    PhoneID: phone-999999999
+    Active: True
+
+  - User: e89c11e8-7e52-4263-84de-a48c8c93943e
+    PhoneID: updated_phone_123
+    Active: True
+
+  - User: db6a2832-496d-4efa-922f-003b1a8f2b13
+    PhoneID: updated_phone_123
+    Active: True
+
+  - User: be632a0c-9bc3-4688-9c10-32ff85e6f0d6
+    PhoneID: 987654321098765
+    Active: True
+
+  - User: 8e3f8564-5240-4da1-9418-ab000cfced65
+    PhoneID: 123456789012345
+    Active: True
+
+  - User: 2ff42957-0c8a-469c-9e11-19d27a818e1c
+    PhoneID: 970142222843511
+    Active: True
+
+  - User: d1bc821d-9297-486c-9484-6ec4dd05cb54
+    PhoneID: 970142222843511
+    Active: True
+
+[Webhook Logs]
+  - User: 9b2a1f3c-4d67-4b9e-9f21-1a8c7e3d4f55 has 1 logs
+
+  - User: db6a2832-496d-4efa-922f-003b1a8f2b13 has 1 logs
+
+  - User: d1bc821d-9297-486c-9484-6ec4dd05cb54 has 1 logs
+
+  [Last 3 Logs Details]
+    - ID: 1 | User: 9b2a1f3c-4d67-4b9e-9f21-1a8c7e3d4f55 | Event: unknown
+    - ID: 2 | User: db6a2832-496d-4efa-922f-003b1a8f2b13 | Event: unknown
+    - ID: 3 | User: d1bc821d-9297-486c-9484-6ec4dd05cb54 | Event: whatsapp_business_account
