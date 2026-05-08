@@ -14,8 +14,9 @@ class Settings(BaseSettings):
     VERSION: str = "1.0.0"
     DEBUG: bool = False
     GEMINI_API_KEY: Optional[str] = None
+    GEMINI_MODEL: str = "gemini-1.5-flash"
     OPENAI_API_KEY: Optional[str] = None
-    AI_PROVIDER: str = "openai"
+    AI_PROVIDER: str = "gemini"
     OLLAMA_BASE_URL: str = "http://localhost:11434"
     OLLAMA_MODEL: str = "llama3"
     OLLAMA_API_KEY: Optional[str] = None

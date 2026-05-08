@@ -41,8 +41,8 @@ class AIService:
                 self.genai = genai
                 if settings.GEMINI_API_KEY:
                     genai.configure(api_key=settings.GEMINI_API_KEY)
-                    # Use gemini-2.5-flash which is confirmed to work
-                    self.model = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+                    # Use model from settings with a stable default
+                    self.model = getattr(settings, "GEMINI_MODEL", "gemini-1.5-flash")
                     logger.info(f"Gemini provider initialized with model: {self.model}")
                 else:
                     logger.warning("GEMINI_API_KEY not configured.")
