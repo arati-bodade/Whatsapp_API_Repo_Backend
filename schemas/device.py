@@ -1,8 +1,7 @@
-from pydantic import BaseModel, Field, ConfigDict
+from pydantic import BaseModel, Field, ConfigDict, field_validator
 from datetime import datetime
 from typing import Optional
 from enum import Enum
-from uuid import UUID
 
 
 class DeviceType(str, Enum):
@@ -28,7 +27,7 @@ class SessionStatus(str, Enum):
 
 
 class DeviceBase(BaseModel):
-    busi_user_id: UUID = Field(..., description="Business user ID")
+    busi_user_id: str = Field(..., description="Business user ID")
     device_name: str = Field(..., description="Device name (e.g., Chrome on Windows)")
     device_type: DeviceType = Field(..., description="Type of device")
     session_status: SessionStatus = Field(default=SessionStatus.pending, description="Current session status")
@@ -38,7 +37,7 @@ class DeviceBase(BaseModel):
 
 
 class DeviceCreate(DeviceBase):
-    device_id: Optional[UUID] = None
+    device_id: Optional[str] = None
 
 
 class DeviceUpdate(BaseModel):
@@ -50,7 +49,7 @@ class DeviceUpdate(BaseModel):
 
 
 class DeviceResponse(DeviceBase):
-    device_id: UUID
+    device_id: str
     created_at: datetime
     updated_at: Optional[datetime] = None
     is_official: bool = False
@@ -66,13 +65,22 @@ class DeviceListResponse(BaseModel):
 
 
 class DeviceRegisterRequest(BaseModel):
-    user_id: UUID = Field(..., description="Business user ID")
+    user_id: str = Field(..., description="Business user ID")
     device_name: str = Field(..., description="Device name")
     device_type: DeviceType = Field(default=DeviceType.WEB, description="Device type")
 
+    @field_validator('device_name')
+    @classmethod
+    def validate_device_name(cls, v: str):
+        if not v or not v.strip():
+            raise ValueError("Device name cannot be empty")
+        if v.isdigit():
+            raise ValueError("Device name cannot consist only of numbers. Please provide a recognizable name (e.g., 'Sales iPhone' or 'Office Web').")
+        return v.strip()
+
 
 class DeviceRegisterResponse(BaseModel):
-    device_id: UUID
+    device_id: str
     device_name: str
     device_type: DeviceType
     session_status: SessionStatus = SessionStatus.created
@@ -86,11 +94,11 @@ class DeviceStatusUpdateRequest(BaseModel):
 
 
 class QRGenerateRequest(BaseModel):
-    device_id: UUID = Field(..., description="Device ID to generate QR for")
+    device_id: str = Field(..., description="Device ID to generate QR for")
 
 
 class QRGenerateResponse(BaseModel):
-    device_id: UUID
+    device_id: str
     qr_code: str
     qr_last_generated: datetime
     expires_at: datetime
