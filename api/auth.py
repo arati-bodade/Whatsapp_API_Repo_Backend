@@ -118,61 +118,27 @@ async def get_me(current_user: Any = Depends(get_current_user)):
 @router.post("/change-password", response_model=ChangePasswordResponse)
 async def change_password(
     password_data: ChangePasswordRequest,
-    token: str = Depends(get_token_from_header),
+    current_user: Any = Depends(get_current_user),
     db: Session = Depends(get_db)
 ):
     """
-    Change password for the logged-in user.
+    Change password for the logged-in user (Admin, Reseller, or BusiUser).
     """
-    # 1. Verify Token
-    payload = verify_token(token)
-    if not payload:
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Invalid or expired token"
-        )
-    
-    reseller_id = payload.get("sub") # reseller_id is a string UUID
-    if not reseller_id:
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="User ID not found in token"
-        )
-        
-    # 2. Identify Reseller (Modify this if logic needs to support BusiUser too, but start with Reseller as requested)
-    # The prompt explicitly asks to "Identify reseller user by user_id" under "Backend (FastAPI) -> b) Authentication"
-    
-    reseller_service = ResellerService(db)
-    reseller = reseller_service.get_reseller_by_id(reseller_id)
-    
-    if not reseller:
-        # If not reseller, maybe check business user? 
-        # But for now, prompt assumes Reseller Profile context. 
-        # Actually validation logic requires checking user table. 
-        # If user is not found, 404.
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail="User not found"
-        )
-
-    # 3. Validate Current Password
-    if not verify_password(password_data.current_password, reseller.password_hash):
+    # 1. Validate Current Password
+    # current_user is already fetched by the dependency
+    if not verify_password(password_data.current_password, current_user.password_hash):
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="Invalid current password"
         )
         
-    # 4. Hash & Update New Password
-    reseller.password_hash = get_password_hash(password_data.new_password)
+    # 2. Hash & Update New Password
+    current_user.password_hash = get_password_hash(password_data.new_password)
     
-    # 5. Commit
-    # Using service might update other fields or timestamps, but direct update is fine for atomic change.
-    # However, to be safe and update `updated_at`, we can just commit. 
-    # Reseller model has `updated_at = Column(DateTime(timezone=True), onupdate=func.now())`.
-    
+    # 3. Commit
     try:
         db.commit()
-        db.refresh(reseller)
+        db.refresh(current_user)
     except Exception as e:
         db.rollback()
         raise HTTPException(
